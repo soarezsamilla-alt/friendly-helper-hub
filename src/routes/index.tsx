@@ -612,8 +612,164 @@ function Index() {
         </div>
       </section>
 
-      <footer className="border-t border-white/10 px-4 py-8 text-center text-xs text-slate-500">
-        © {new Date().getFullYear()} Projetos Rurais · Todos os direitos reservados
+      {/* COMECE EM MINUTOS */}
+      <section className="px-4 py-20">
+        <div className="mx-auto max-w-6xl">
+          <SectionTitle>
+            COMECE A ORGANIZAR{" "}
+            <span className="bg-brand-neon px-2 text-brand-bg">EM MINUTOS</span>
+          </SectionTitle>
+
+          <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              { n: 1, title: "ESCOLHA SEU PLANO", text: "Clique no botão e escolha o plano ideal para sua necessidade." },
+              { n: 2, title: "RECEBA O ACESSO", text: "Em poucos segundos o material chega no seu WhatsApp e no seu e-mail." },
+              { n: 3, title: "ABRA OS PROJETOS", text: "Acesse pelo celular, tablet ou se preferir pela tela do computador." },
+              { n: 4, title: "APLIQUE NA TERRA", text: "Comece a organizar seu sítio e transformar sua terra em lucro." },
+            ].map(({ n, title, text }) => (
+              <div key={n} className="text-center">
+                <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-brand-neon font-display text-xl text-brand-bg shadow-[0_8px_24px_-6px_#c4ff2e]">
+                  {n}
+                </div>
+                <h3 className="mt-5 font-display text-sm uppercase leading-tight text-white">
+                  {title}
+                </h3>
+                <p className="mt-3 text-xs leading-relaxed text-slate-400">{text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 flex justify-center">
+            <NeonCTA>QUERO MEU ACESSO AGORA</NeonCTA>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING */}
+      <section id="planos" className="bg-white px-4 py-20 text-slate-900">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-center font-display text-3xl uppercase leading-tight sm:text-5xl">
+            ESCOLHA SEU PLANO E <span className="text-emerald-500">COMECE AGORA</span>
+          </h2>
+
+          <div className="mt-6 flex justify-center">
+            <span className="inline-flex items-center gap-2 rounded-full bg-red-50 px-4 py-1.5 text-xs font-semibold text-brand-red">
+              <Clock className="h-3.5 w-3.5" /> OFERTA DISPONÍVEL SOMENTE HOJE, 30/06/2026
+            </span>
+          </div>
+
+          <div className="mt-10 grid items-start gap-6 md:grid-cols-2">
+            {/* Plano Básico */}
+            <div className="rounded-3xl bg-white p-8 ring-1 ring-slate-200 shadow-sm">
+              <h3 className="text-center font-display text-2xl uppercase">PLANO BÁSICO</h3>
+              <img src={kitMockup} alt="Plano Básico" className="mx-auto my-6 h-44 w-auto object-contain" />
+              <ul className="space-y-3 text-sm">
+                <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> +100 Projetos de Sítio Produtivo</li>
+                <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 4 Bônus Exclusivos</li>
+              </ul>
+              <div className="mt-8 text-center">
+                <p className="text-xs text-slate-500 line-through">de R$97,00 por:</p>
+                <p className="font-display text-4xl text-slate-900">R$9,90</p>
+                <p className="text-xs text-slate-500">pagamento único</p>
+              </div>
+              <a
+                href={CTA_URL}
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-brand-neon py-4 font-display text-sm uppercase text-brand-bg transition hover:scale-[1.02]"
+              >
+                QUERO O BÁSICO <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+
+            {/* Plano Completo */}
+            <div className="relative rounded-3xl bg-lime-50 p-8 ring-2 ring-brand-neon shadow-xl">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-bg px-4 py-1 text-[10px] font-bold uppercase tracking-wide text-brand-neon">
+                Mais Vendido · Plano Completo
+              </span>
+              <h3 className="text-center font-display text-2xl uppercase">PLANO COMPLETO</h3>
+              <img src={kitMockup} alt="Plano Completo" className="mx-auto my-6 h-44 w-auto object-contain" />
+              <div className="mb-4 rounded-xl bg-brand-bg py-2 text-center font-display text-xs uppercase text-white">
+                Todos os Bônus Inclusos
+              </div>
+              <ul className="space-y-2.5 text-sm">
+                {[
+                  "+100 Projetos de Sítio Produtivo",
+                  "Bônus #1: Construção Rural",
+                  "Bônus #2: Planilha de Lucros",
+                  "Bônus #3: Guia de Plantio Inteligente",
+                  "Bônus #4: Manual de Energia Rural",
+                  "Acesso Vitalício",
+                ].map((t) => (
+                  <li key={t} className="flex items-center gap-2">
+                    <Check className="h-4 w-4 text-emerald-600" /> {t}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-6 text-center">
+                <p className="text-xs text-slate-500 line-through">de R$197,00 por:</p>
+                <p className="font-display text-5xl text-slate-900">R$27,00</p>
+                <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
+              </div>
+              <a
+                href={CTA_URL}
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-brand-neon py-4 font-display text-sm uppercase text-brand-bg shadow-[0_10px_30px_-8px_#c4ff2e] transition hover:scale-[1.02]"
+              >
+                QUERO ADQUIRIR O MEU <ArrowRight className="h-4 w-4" />
+              </a>
+              <p className="mt-4 text-center text-xs font-bold text-brand-red">
+                🔥 APROVEITE AGORA: VOCÊ NÃO VAI ENCONTRAR ESSE PREÇO DEPOIS!
+              </p>
+              <p className="mt-1 text-center text-[10px] text-slate-500">7 dias de garantia incondicional</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-white px-4 py-20 text-slate-900">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-center font-display text-3xl uppercase leading-tight sm:text-5xl">
+            PERGUNTAS <span className="bg-brand-neon px-2">FREQUENTES</span>
+          </h2>
+
+          <div className="mt-12 divide-y divide-slate-200 border-y border-slate-200">
+            {[
+              { q: "O que vem incluso no pacote?", a: "Você recebe os +100 projetos completos de sítios produtivos com medidas reais e, no Plano Completo, os 4 bônus exclusivos." },
+              { q: "Como vou ter acesso ao material?", a: "Após a compra, você recebe o acesso imediato no seu e-mail e também no WhatsApp cadastrado." },
+              { q: "O material é digital ou físico?", a: "100% digital. Você pode acessar pelo celular, tablet ou computador, e imprimir se quiser." },
+              { q: "Para quem é indicado esse material?", a: "Para qualquer pessoa que tenha sítio, chácara ou terreno e queira organizar e gerar renda com a terra." },
+              { q: "Preciso de conhecimento prévio para usar?", a: "Não. Os projetos foram feitos para qualquer pessoa aplicar, mesmo sem experiência técnica." },
+              { q: "Funciona para quem tem pouco espaço?", a: "Sim! Há projetos para áreas pequenas, médias e grandes." },
+              { q: "Qual a diferença entre o Plano Básico e o Completo?", a: "O Básico inclui apenas os projetos. O Completo inclui projetos + os 4 bônus exclusivos." },
+              { q: "Vou precisar investir muito dinheiro para aplicar?", a: "Não. Os projetos são pensados para começar pequeno, com baixo investimento e ir escalando." },
+              { q: "E se eu não gostar do material?", a: "Você tem 7 dias de garantia incondicional. Pediu reembolso, devolvemos 100% do valor." },
+            ].map((item) => (
+              <details key={item.q} className="group py-4">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-sm font-bold text-slate-900">
+                  {item.q}
+                  <ChevronRight className="h-4 w-4 shrink-0 text-slate-400 transition-transform group-open:rotate-90" />
+                </summary>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">{item.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-white px-4 py-12 text-center text-slate-700">
+        <div className="font-display text-xl italic">SÍTIO PRODUTIVO PRIME</div>
+        <p className="mt-6 text-[11px] uppercase tracking-wider text-slate-400">
+          © {new Date().getFullYear()} Sítio Produtivo Prime. Todos os direitos reservados.
+        </p>
+        <div className="mt-3 flex justify-center gap-4 text-[11px] text-slate-500">
+          <a href="#" className="hover:underline">TERMOS DE USO</a>
+          <a href="#" className="hover:underline">POLÍTICAS DE PRIVACIDADE</a>
+        </div>
+        <p className="mx-auto mt-6 max-w-2xl text-[10px] text-brand-red">
+          Este site não é afiliado ao Meta, Facebook ou Instagram. Depois que você sair do Instagram
+          ou Facebook, a responsabilidade não é deles e sim do nosso site. Trabalhamos para que você
+          tenha a melhor experiência possível.
+        </p>
       </footer>
     </div>
   );
