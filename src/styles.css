@@ -4,6 +4,18 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-brand-bg: #061027;
+  --color-brand-bg-2: #0a1932;
+  --color-brand-card: #0f1f3a;
+  --color-brand-neon: #c4ff2e;
+  --color-brand-neon-2: #a8e600;
+  --color-brand-red: #ff4d4d;
+  --color-brand-red-2: #ff3838;
+  --font-display: "Archivo Black", "Inter", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
 /*
  * Design system definition.
  *
