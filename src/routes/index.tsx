@@ -95,7 +95,7 @@ function Index() {
             +100 Projetos de Sítios e Chácaras Produtivas
           </h1>
           <p className="mx-auto mt-4 max-w-2xl font-display text-2xl uppercase leading-tight text-brand-neon underline decoration-brand-neon decoration-4 underline-offset-8 sm:text-4xl">
-            Para Transformar Terra Parada em Fonte de Renda
+            que transforma sua terra parada em fonte de renda
           </p>
 
           {/* Video placeholder */}
