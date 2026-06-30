@@ -92,7 +92,7 @@ function Index() {
       <section className="relative overflow-hidden px-4 pb-16 pt-12 sm:pt-16">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="font-display text-3xl leading-tight text-white sm:text-5xl md:text-6xl">
-            +100 Projetos de Sítios Produtivos com Medidas Reais
+            +100 Projetos de Sítios e Chácaras Produtivas
           </h1>
           <p className="mx-auto mt-4 max-w-2xl font-display text-2xl uppercase leading-tight text-brand-neon underline decoration-brand-neon decoration-4 underline-offset-8 sm:text-4xl">
             Para Transformar Terra Parada em Fonte de Renda
