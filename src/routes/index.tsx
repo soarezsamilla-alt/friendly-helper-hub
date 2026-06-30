@@ -111,9 +111,10 @@ function Index() {
           </div>
 
           <p className="mx-auto mt-8 max-w-xl text-base text-slate-300 sm:text-lg">
-            Pare de perder dinheiro com terra mal aproveitada. Use{" "}
-            <strong className="text-white">projetos prontos</strong> e comece a organizar seu sítio
-            ainda hoje.
+            A maior biblioteca de plantas de sítios do Brasil com{" "}
+            <strong className="text-white">+100 projetos profissionais</strong> com medidas reais,
+            divisões estratégicas e layouts prontos para executar, mesmo que você nunca tenha
+            planejado nada rural na vida.
           </p>
 
           <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200 sm:text-sm">
