@@ -25,6 +25,8 @@ import bonus4 from "@/assets/bonus4.jpg";
 import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
+import heroMockupAsset from "@/assets/hero-mockup.webp.asset.json";
+const heroMockup = heroMockupAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
