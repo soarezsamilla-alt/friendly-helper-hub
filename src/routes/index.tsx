@@ -100,16 +100,14 @@ function Index() {
             que transforma sua terra parada em fonte de renda
           </p>
 
-          {/* Video placeholder */}
-          <div className="mx-auto mt-10 aspect-video w-full max-w-2xl overflow-hidden rounded-xl bg-gradient-to-br from-slate-700 to-slate-900 ring-1 ring-white/10">
-            <div className="flex h-full w-full items-center justify-center text-sm text-white/60">
-              <div className="flex flex-col items-center gap-2">
-                <div className="grid h-16 w-16 place-items-center rounded-full bg-white/10 backdrop-blur">
-                  <div className="ml-1 h-0 w-0 border-y-[10px] border-l-[16px] border-y-transparent border-l-white" />
-                </div>
-                <span>Vídeo da oferta</span>
-              </div>
-            </div>
+          {/* Hero mockup */}
+          <div className="mx-auto mt-10 w-full max-w-2xl">
+            <img
+              src={heroMockup}
+              alt="Mockup do kit +100 Projetos de Sítios e Chácaras Produtivas"
+              className="h-auto w-full"
+              loading="eager"
+            />
           </div>
 
           <p className="mx-auto mt-8 max-w-xl text-base text-slate-300 sm:text-lg">
