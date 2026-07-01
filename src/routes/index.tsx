@@ -830,7 +830,7 @@ function Index() {
             </div>
 
             {/* Plano Completo */}
-            <div className="relative rounded-3xl bg-lime-50 p-5 ring-2 ring-brand-neon shadow-xl">
+            <div id="comprar" className="relative scroll-mt-24 rounded-3xl bg-lime-50 p-5 ring-2 ring-brand-neon shadow-xl">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-bg px-4 py-1 text-[8px] font-bold uppercase tracking-wide text-brand-neon">
                 Mais Vendido · Plano Completo
               </span>
