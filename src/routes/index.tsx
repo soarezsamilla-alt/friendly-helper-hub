@@ -580,7 +580,7 @@ function Index() {
 
           <div className="mt-6 flex justify-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-brand-neon px-5 py-2 text-xs font-bold uppercase text-brand-bg">
-              + 4 Bônus Exclusivos
+              + 6 Bônus Exclusivos
             </span>
           </div>
 
@@ -590,6 +590,8 @@ function Index() {
               { n: 2, img: bonus2, title: "PLANILHA DE LUCRO POR ÁREA", text: "Ferramenta prática para calcular a viabilidade financeira de cada cultivo no seu terreno." },
               { n: 3, img: bonus3, title: "GUIA DE PLANTIO INTELIGENTE", text: "Técnicas de consórcio de culturas para maximizar a colheita em espaços reduzidos." },
               { n: 4, img: bonus4, title: "MANUAL DE ENERGIA RURAL", text: "Como implementar soluções simples de energia solar e biodigestores no seu sítio." },
+              { n: 5, img: bonus4, title: "MANUAL DE ENERGIA RURAL", text: "Como implementar soluções simples de energia solar e biodigestores no seu sítio." },
+              { n: 6, img: bonus4, title: "MANUAL DE ENERGIA RURAL", text: "Como implementar soluções simples de energia solar e biodigestores no seu sítio." },
             ].map(({ n, img, title, text }) => (
               <div
                 key={n}
@@ -686,7 +688,7 @@ function Index() {
               <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto my-6 h-44 w-auto object-contain" />
               <ul className="space-y-3 text-sm">
                 <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> +100 Projetos de Sítio Produtivo</li>
-                <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 4 Bônus Exclusivos</li>
+                <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 6 Bônus Exclusivos</li>
               </ul>
               <div className="mt-8 text-center">
                 <p className="text-xs text-slate-500 line-through">de R$97,00 por:</p>
@@ -724,6 +726,8 @@ function Index() {
                   "Bônus #2: Planilha de Lucros",
                   "Bônus #3: Guia de Plantio Inteligente",
                   "Bônus #4: Manual de Energia Rural",
+                  "Bônus #5: Manual de Energia Rural",
+                  "Bônus #6: Manual de Energia Rural",
                   "Acesso Vitalício",
                 ].map((t) => (
                   <li key={t} className="flex items-center gap-2">
@@ -756,13 +760,13 @@ function Index() {
 
           <div className="mt-12 divide-y divide-slate-200 border-y border-slate-200">
             {[
-              { q: "O que vem incluso no pacote?", a: "Você recebe os +100 projetos completos de sítios produtivos com medidas reais e, no Plano Completo, os 4 bônus exclusivos." },
+              { q: "O que vem incluso no pacote?", a: "Você recebe os +100 projetos completos de sítios produtivos com medidas reais e, no Plano Completo, os 6 bônus exclusivos." },
               { q: "Como vou ter acesso ao material?", a: "Após a compra, você recebe o acesso imediato no seu e-mail e também no WhatsApp cadastrado." },
               { q: "O material é digital ou físico?", a: "100% digital. Você pode acessar pelo celular, tablet ou computador, e imprimir se quiser." },
               { q: "Para quem é indicado esse material?", a: "Para qualquer pessoa que tenha sítio, chácara ou terreno e queira organizar e gerar renda com a terra." },
               { q: "Preciso de conhecimento prévio para usar?", a: "Não. Os projetos foram feitos para qualquer pessoa aplicar, mesmo sem experiência técnica." },
               { q: "Funciona para quem tem pouco espaço?", a: "Sim! Há projetos para áreas pequenas, médias e grandes." },
-              { q: "Qual a diferença entre o Plano Básico e o Completo?", a: "O Básico inclui apenas os projetos. O Completo inclui projetos + os 4 bônus exclusivos." },
+              { q: "Qual a diferença entre o Plano Básico e o Completo?", a: "O Básico inclui apenas os projetos. O Completo inclui projetos + os 6 bônus exclusivos." },
               { q: "Vou precisar investir muito dinheiro para aplicar?", a: "Não. Os projetos são pensados para começar pequeno, com baixo investimento e ir escalando." },
               { q: "E se eu não gostar do material?", a: "Você tem 7 dias de garantia incondicional. Pediu reembolso, devolvemos 100% do valor." },
             ].map((item) => (
