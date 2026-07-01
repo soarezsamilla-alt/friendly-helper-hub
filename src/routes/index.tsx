@@ -580,7 +580,7 @@ function Index() {
 
           <div className="mt-6 flex justify-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-brand-neon px-5 py-2 text-xs font-bold uppercase text-brand-bg">
-              + 4 Bônus Exclusivos
+              + 6 Bônus Exclusivos
             </span>
           </div>
 
