@@ -903,7 +903,7 @@ function Index() {
               {/* Preview grid */}
               <div className="mt-6 grid grid-cols-3 gap-2">
                 <img
-                  src={amostra01.url}
+                  src="https://www.image2url.com/r2/default/images/1782915535006-bac19f08-210a-42fd-82f6-2b74188a5291.jpeg"
                   alt="Preview Instagram 1"
                   loading="lazy"
                   className="aspect-square w-full rounded-lg object-cover"
