@@ -708,7 +708,7 @@ function Index() {
             {/* Plano Básico */}
             <div className="rounded-3xl bg-white p-8 ring-1 ring-slate-200 shadow-sm">
               <h3 className="text-center font-display text-2xl uppercase">PLANO BÁSICO</h3>
-              <img src={kitMockup} alt="Plano Básico" className="mx-auto my-6 h-44 w-auto object-contain" />
+              <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="mx-auto my-6 h-44 w-auto object-contain" />
               <ul className="space-y-3 text-sm">
                 <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> +100 Projetos de Sítio Produtivo</li>
                 <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 4 Bônus Exclusivos</li>
