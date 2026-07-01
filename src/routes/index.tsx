@@ -744,7 +744,7 @@ function Index() {
               <CountdownCompleto />
               <div className="mt-4 text-center">
                 <p className="text-xs text-slate-500 line-through">de R$197,00 por:</p>
-                <p className="font-display text-5xl text-slate-900">R$27,00</p>
+                <p className="font-display text-5xl text-slate-900">R$27,90</p>
                 <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
               </div>
               <img src={heroMockup} alt="Plano Completo" className="mx-auto my-6 h-44 w-auto object-contain" />
