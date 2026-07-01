@@ -27,6 +27,30 @@ import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
 import heroMockupAsset from "@/assets/hero-mockup.webp.asset.json";
 const heroMockup = heroMockupAsset.url;
+import amostra01 from "@/assets/amostras/amostra-01.png.asset.json";
+import amostra02 from "@/assets/amostras/amostra-02.png.asset.json";
+import amostra03 from "@/assets/amostras/amostra-03.png.asset.json";
+import amostra04 from "@/assets/amostras/amostra-04.png.asset.json";
+import amostra05 from "@/assets/amostras/amostra-05.png.asset.json";
+import amostra06 from "@/assets/amostras/amostra-06.png.asset.json";
+import amostra07 from "@/assets/amostras/amostra-07.png.asset.json";
+import amostra08 from "@/assets/amostras/amostra-08.png.asset.json";
+import amostra09 from "@/assets/amostras/amostra-09.png.asset.json";
+import amostra10 from "@/assets/amostras/amostra-10.png.asset.json";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { useRef } from "react";
+
+const amostras = [
+  amostra01, amostra02, amostra03, amostra04, amostra05,
+  amostra06, amostra07, amostra08, amostra09, amostra10,
+].map((a) => a.url);
 
 export const Route = createFileRoute("/")({
   head: () => ({
