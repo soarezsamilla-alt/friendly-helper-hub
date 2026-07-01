@@ -197,35 +197,6 @@ function Index() {
         </div>
       </section>
 
-      {/* RED PAIN SECTION */}
-      <section className="bg-brand-red px-4 py-16 text-white">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl uppercase leading-tight sm:text-5xl">
-            Você tem um sítio… mas ele não te dá{" "}
-            <span className="bg-white px-3 text-brand-red">RETORNO</span>?
-          </h2>
-          <p className="mx-auto mt-6 max-w-xl text-sm sm:text-base">
-            Não é falta de vontade. É falta de um plano.{" "}
-            <strong>Esse material resolve isso.</strong>
-          </p>
-          <ul className="mx-auto mt-8 flex max-w-md flex-col gap-3 text-left text-sm sm:text-base">
-            {[
-              "Áreas paradas sem gerar nada",
-              "Dinheiro parado em terra sem produtividade",
-              "Falta de organização e medo de investir errado",
-            ].map((t) => (
-              <li key={t} className="flex items-center justify-center gap-3">
-                <X className="h-4 w-4 shrink-0" /> {t}
-              </li>
-            ))}
-          </ul>
-          <div className="mt-10 flex justify-center">
-            <NeonCTA>
-              QUERO TRANSFORMAR MINHA TERRA <ArrowRight className="h-4 w-4" />
-            </NeonCTA>
-          </div>
-        </div>
-      </section>
 
       {/* O QUE VAI MUDAR */}
       <section className="px-4 py-20">
