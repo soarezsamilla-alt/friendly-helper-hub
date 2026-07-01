@@ -14,6 +14,7 @@ import {
   Mail,
   Phone,
   ArrowRight,
+  Sparkles,
 } from "lucide-react";
 import beforeAfter from "@/assets/before-after.jpg";
 import resultado from "@/assets/resultado.jpg";
@@ -208,8 +209,95 @@ function DepoimentosCarousel() {
 
 
 
+function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const [left, setLeft] = useState(15 * 60);
+  useEffect(() => {
+    if (!open) return;
+    setLeft(15 * 60);
+    const id = setInterval(() => setLeft((s) => (s > 0 ? s - 1 : 0)), 1000);
+    return () => clearInterval(id);
+  }, [open]);
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+  if (!open) return null;
+  const mm = String(Math.floor(left / 60)).padStart(2, "0");
+  const ss = String(left % 60).padStart(2, "0");
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
+      <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-[#0b0b14] p-8 text-white ring-1 ring-amber-400/40 shadow-[0_0_60px_-10px_rgba(251,191,36,0.5)]">
+        <button
+          onClick={onClose}
+          aria-label="Fechar"
+          className="absolute right-4 top-4 rounded-full p-1 text-white/60 transition hover:bg-white/10 hover:text-white"
+        >
+          <X className="h-5 w-5" />
+        </button>
+
+        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-amber-400/10 ring-1 ring-amber-400/40">
+          <Sparkles className="h-6 w-6 text-amber-400" />
+        </div>
+
+        <h3 className="text-center font-display text-2xl uppercase tracking-wide">
+          E<span className="text-amber-400">$</span>PERE! <span className="text-amber-400">OFERTA ÚNICA</span>
+        </h3>
+        <p className="mt-3 text-center text-sm text-slate-300">
+          Por que levar apenas o básico se você pode ter o{" "}
+          <span className="font-bold text-amber-400">Plano Completo</span>
+          <br />por um valor simbólico de upgrade?
+        </p>
+
+        <div className="mt-5 flex items-center justify-center gap-3 rounded-xl border border-amber-400/30 bg-amber-400/5 py-3 text-sm">
+          <Clock className="h-4 w-4 text-amber-400" />
+          <span className="uppercase tracking-wide text-slate-300">A oferta expira em:</span>
+          <span className="font-mono text-lg font-bold text-amber-400">{mm}:{ss}</span>
+        </div>
+
+        <p className="mt-4 text-center text-xs italic text-slate-400">
+          O Plano Completo (Regular: R$ 27,90) é a escolha de 92% das pessoas.
+          Aproveite o desconto de upgrade agora!
+        </p>
+
+        <ul className="mt-5 space-y-2.5 rounded-xl border border-white/10 bg-white/5 p-4 text-sm">
+          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-amber-400" /> <span className="font-semibold">Tudo do Plano Básico</span></li>
+          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-amber-400" /> <span className="font-semibold">6 BÔNUS INCLUSOS</span> <span className="text-slate-400">(Construção, Lucros, Plantio e +)</span></li>
+          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-amber-400" /> <span className="font-semibold">Suporte prioritário via WhatsApp</span></li>
+        </ul>
+
+        <div className="mt-6 text-center">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Upgrade do Plano Completo:</p>
+          <p className="mt-1 text-sm text-slate-400 line-through">De R$ 27,90</p>
+          <p className="font-display text-xl uppercase tracking-wide text-slate-200">
+            Por apenas R$ <span className="text-5xl text-amber-400">19</span>,90
+          </p>
+          <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-amber-400">
+            Economia de R$ 8,00 extra hoje!
+          </p>
+        </div>
+
+        <a
+          href={CTA_URL}
+          className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-300 py-4 font-display text-sm uppercase text-black shadow-[0_10px_30px_-8px_rgba(251,191,36,0.6)] transition hover:scale-[1.02]"
+        >
+          QUERO O PLANO COMPLETO POR R$ 19,90
+        </a>
+
+        <button
+          onClick={onClose}
+          className="mt-4 w-full text-center text-[11px] font-semibold uppercase tracking-wider text-slate-400 underline underline-offset-4 hover:text-white"
+        >
+          Não, obrigado. Prefiro o Plano Básico de R$ 9,90
+        </button>
+      </div>
+    </div>
+  );
+}
 
 function Index() {
+  const [upsellOpen, setUpsellOpen] = useState(false);
   return (
     <div className="min-h-screen bg-brand-bg font-sans text-white antialiased">
       {/* Top urgency bar */}
@@ -697,12 +785,13 @@ function Index() {
                 <p className="font-display text-4xl text-slate-900">R$9,90</p>
                 <p className="text-xs text-slate-500">pagamento único</p>
               </div>
-              <a
-                href={CTA_URL}
+              <button
+                type="button"
+                onClick={() => setUpsellOpen(true)}
                 className="mt-6 flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white py-4 font-display text-sm uppercase text-slate-600 transition hover:bg-slate-50"
               >
                 QUERO O BÁSICO <ArrowRight className="h-4 w-4" />
-              </a>
+              </button>
             </div>
 
             {/* Plano Completo */}
@@ -824,6 +913,9 @@ function Index() {
           tenha a melhor experiência possível.
         </p>
       </footer>
+
+      <UpsellModal open={upsellOpen} onClose={() => setUpsellOpen(false)} />
+
     </div>
   );
 }
