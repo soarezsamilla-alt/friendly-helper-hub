@@ -407,7 +407,7 @@ function Index() {
           <h1 className="font-display text-3xl leading-tight text-white sm:text-5xl md:text-6xl">
             +100 Projetos de Sítios e Chácaras Produtivas
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-2xl font-light uppercase leading-tight text-brand-neon underline decoration-brand-neon decoration-1 underline-offset-8 sm:text-4xl">
+          <p className="mx-auto mt-4 max-w-2xl text-2xl font-light uppercase leading-tight text-brand-neon underline decoration-brand-neon decoration-[3px] underline-offset-2 sm:text-4xl">
             que transforma sua terra parada em fonte de renda
           </p>
 
