@@ -455,10 +455,6 @@ function Index() {
               className="w-full"
             />
             <div className="absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-white/70" />
-            <div className="absolute left-1/2 top-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white shadow-lg">
-              <ChevronLeft className="h-4 w-4 text-slate-900" />
-              <ChevronRight className="absolute right-1 h-4 w-4 text-slate-900" />
-            </div>
             <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-md bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-900">
               <X className="h-4 w-4 text-red-500" /> SEM OS PROJETOS
             </span>
