@@ -375,16 +375,8 @@ function Index() {
             +100 plantas profissionais com medidas reais, prontas para aplicar.
           </p>
 
-          <div className="mt-12 flex gap-4 overflow-x-auto pb-4 [scrollbar-color:#c4ff2e_transparent]">
-            {[project3, project1, project2, project1, project3].map((src, i) => (
-              <img
-                key={i}
-                src={src}
-                alt={`Projeto ${i + 1}`}
-                loading="lazy"
-                className="h-[420px] w-[280px] shrink-0 rounded-xl object-cover ring-1 ring-white/10"
-              />
-            ))}
+          <div className="mt-12">
+            <ProjetosCarousel />
           </div>
         </div>
       </section>
