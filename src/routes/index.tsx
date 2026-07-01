@@ -116,10 +116,10 @@ export const Route = createFileRoute("/")({
 
 const CTA_URL = "#comprar";
 
-function NeonCTA({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+function NeonCTA({ children, className = "", href = CTA_URL }: { children: React.ReactNode; className?: string; href?: string }) {
   return (
     <a
-      href={CTA_URL}
+      href={href}
       className={`neon-cta group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-brand-neon px-8 py-4 text-center font-display text-sm tracking-wide text-brand-bg shadow-[0_10px_40px_-10px_#c4ff2e] transition-transform hover:scale-[1.04] active:scale-95 sm:text-base ${className}`}
     >
       <span className="relative z-10">{children}</span>
@@ -127,6 +127,7 @@ function NeonCTA({ children, className = "" }: { children: React.ReactNode; clas
     </a>
   );
 }
+
 
 function SectionTitle({
   children,
