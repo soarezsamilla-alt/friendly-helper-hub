@@ -742,6 +742,11 @@ function Index() {
               </span>
               <h3 className="text-center font-display text-2xl uppercase">PLANO COMPLETO</h3>
               <CountdownCompleto />
+              <div className="mt-4 text-center">
+                <p className="text-xs text-slate-500 line-through">de R$197,00 por:</p>
+                <p className="font-display text-5xl text-slate-900">R$27,00</p>
+                <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
+              </div>
               <img src={kitMockup} alt="Plano Completo" className="mx-auto my-6 h-44 w-auto object-contain" />
               <div className="mb-4 rounded-xl bg-brand-bg py-2 text-center font-display text-xs uppercase text-white">
                 Todos os Bônus Inclusos
@@ -760,11 +765,7 @@ function Index() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 text-center">
-                <p className="text-xs text-slate-500 line-through">de R$197,00 por:</p>
-                <p className="font-display text-5xl text-slate-900">R$27,00</p>
-                <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
-              </div>
+
               <a
                 href={CTA_URL}
                 className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-brand-neon py-4 font-display text-sm uppercase text-brand-bg shadow-[0_10px_30px_-8px_#c4ff2e] transition hover:scale-[1.02]"
