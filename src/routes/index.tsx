@@ -687,7 +687,7 @@ function Index() {
             {/* Plano Básico */}
             <div className="card-border-light rounded-3xl bg-white p-8 shadow-sm">
               <h3 className="text-center font-display text-2xl uppercase">PLANO BÁSICO</h3>
-              <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto my-6 h-44 w-auto object-contain" />
+              <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto my-6 h-72 md:h-80 w-auto object-contain" />
               <ul className="space-y-3 text-sm">
                 <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> +100 Projetos de Sítio Produtivo</li>
                 <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 6 Bônus Exclusivos</li>
@@ -717,7 +717,7 @@ function Index() {
                 <p className="font-display text-5xl text-slate-900">R$27,90</p>
                 <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
               </div>
-              <img src={heroMockup} alt="Plano Completo" className="hero-mockup-float mx-auto my-6 h-44 w-auto object-contain" />
+              <img src={heroMockup} alt="Plano Completo" className="hero-mockup-float mx-auto my-6 h-72 md:h-80 w-auto object-contain" />
               <div className="mb-4 rounded-xl bg-brand-bg py-2 text-center font-display text-xs uppercase text-white">
                 Todos os Bônus Inclusos
               </div>
