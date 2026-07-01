@@ -45,7 +45,46 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
+function CountdownCompleto() {
+  const [ms, setMs] = useState<number>(24 * 60 * 60 * 1000);
+  useEffect(() => {
+    const KEY = "plano_completo_deadline";
+    let deadline = Number(localStorage.getItem(KEY) || 0);
+    if (!deadline || deadline < Date.now()) {
+      deadline = Date.now() + 24 * 60 * 60 * 1000;
+      localStorage.setItem(KEY, String(deadline));
+    }
+    const tick = () => setMs(Math.max(0, deadline - Date.now()));
+    tick();
+    const id = setInterval(tick, 1000);
+    return () => clearInterval(id);
+  }, []);
+  const h = String(Math.floor(ms / 3600000)).padStart(2, "0");
+  const m = String(Math.floor((ms % 3600000) / 60000)).padStart(2, "0");
+  const s = String(Math.floor((ms % 60000) / 1000)).padStart(2, "0");
+  const Box = ({ v, l }: { v: string; l: string }) => (
+    <div className="flex flex-col items-center rounded-lg bg-brand-bg px-3 py-2 min-w-[58px]">
+      <span className="font-display text-2xl leading-none text-brand-neon tabular-nums">{v}</span>
+      <span className="mt-1 text-[9px] font-bold uppercase tracking-wider text-white/70">{l}</span>
+    </div>
+  );
+  return (
+    <div className="mt-4 rounded-xl border-2 border-brand-red/40 bg-white/60 p-3">
+      <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-wider text-brand-red">
+        ⏰ Oferta expira em:
+      </p>
+      <div className="flex items-center justify-center gap-2">
+        <Box v={h} l="Horas" />
+        <span className="font-display text-2xl text-brand-bg">:</span>
+        <Box v={m} l="Min" />
+        <span className="font-display text-2xl text-brand-bg">:</span>
+        <Box v={s} l="Seg" />
+      </div>
+    </div>
+  );
+}
 
 const amostras = [
   amostra01, amostra02, amostra03, amostra04, amostra05,
@@ -725,6 +764,7 @@ function Index() {
                 <p className="font-display text-5xl text-slate-900">R$27,00</p>
                 <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
               </div>
+              <CountdownCompleto />
               <a
                 href={CTA_URL}
                 className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-brand-neon py-4 font-display text-sm uppercase text-brand-bg shadow-[0_10px_30px_-8px_#c4ff2e] transition hover:scale-[1.02]"
