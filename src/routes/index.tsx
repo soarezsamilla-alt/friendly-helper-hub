@@ -700,7 +700,7 @@ function Index() {
                 Mais Vendido · Plano Completo
               </span>
               <h3 className="text-center font-display text-2xl uppercase">PLANO COMPLETO</h3>
-              <img src={kitMockup} alt="Plano Completo" className="mx-auto my-6 h-44 w-auto object-contain" />
+              <img src={heroMockupAsset.url} alt="Plano Completo" className="mx-auto my-6 h-44 w-auto object-contain" />
               <div className="mb-4 rounded-xl bg-brand-bg py-2 text-center font-display text-xs uppercase text-white">
                 Todos os Bônus Inclusos
               </div>
