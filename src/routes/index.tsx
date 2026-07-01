@@ -769,16 +769,16 @@ function Index() {
 
           <div className="mt-10 grid items-start gap-6 md:grid-cols-2">
             {/* Plano Básico */}
-            <div className="card-border-light rounded-3xl bg-white p-8 shadow-sm">
+            <div className="card-border-light rounded-3xl bg-white p-5 shadow-sm">
               <h3 className="text-center font-display text-2xl uppercase">PLANO BÁSICO</h3>
-              <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto my-6 h-72 md:h-80 w-auto object-contain" />
-              <ul className="space-y-3 text-[15px]">
+              <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto my-3 h-72 md:h-80 w-auto object-contain" />
+              <ul className="space-y-1.5 text-[15px]">
                 <li className="flex items-center gap-2 font-semibold text-slate-900"><Check className="h-4 w-4 text-emerald-600" /> +100 projetos completos</li>
                 <li className="flex items-center gap-2 font-semibold text-slate-900"><Check className="h-4 w-4 text-emerald-600" /> Acesso imediato após compra</li>
                 <li className="flex items-center gap-2 font-semibold text-slate-900"><Check className="h-4 w-4 text-emerald-600" /> Garantia de 7 dias</li>
                 <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 6 Bônus Exclusivos</li>
               </ul>
-              <div className="mt-8 text-center">
+              <div className="mt-4 text-center">
                 <p className="text-xs text-slate-500 line-through">de R$97,00 por:</p>
                 <p className="font-display text-4xl text-slate-900">R$9,90</p>
                 <p className="text-xs text-slate-500">pagamento único</p>
@@ -786,7 +786,7 @@ function Index() {
               <button
                 type="button"
                 onClick={() => setUpsellOpen(true)}
-                className="soft-pulse mt-6 flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white py-4 font-display text-sm uppercase text-slate-600 transition hover:bg-slate-50"
+                className="soft-pulse mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white py-3 font-display text-sm uppercase text-slate-600 transition hover:bg-slate-50"
               >
                 QUERO O BÁSICO <ArrowRight className="h-4 w-4" />
               </button>
