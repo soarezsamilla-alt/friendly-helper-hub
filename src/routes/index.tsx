@@ -609,7 +609,7 @@ function Index() {
                     width={800}
                     height={1000}
                     loading="lazy"
-                    className="mx-auto h-64 w-auto object-contain"
+                    className="hero-mockup-float mx-auto h-64 w-auto object-contain"
                   />
                 </div>
                 <div className="p-5">
