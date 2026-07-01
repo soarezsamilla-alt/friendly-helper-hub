@@ -215,3 +215,40 @@
   animation: neon-cta-shine 3s ease-in-out infinite;
   pointer-events: none;
 }
+
+@property --card-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes card-border-spin {
+  to { --card-angle: 360deg; }
+}
+
+.card-border-light {
+  position: relative;
+  background: #ffffff;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+.card-border-light::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(from var(--card-angle), transparent 0deg, #c4ff2e 60deg, #ffffff 120deg, transparent 200deg, #c4ff2e 300deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: card-border-spin 4s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card-border-light > * {
+  position: relative;
+  z-index: 1;
+}
