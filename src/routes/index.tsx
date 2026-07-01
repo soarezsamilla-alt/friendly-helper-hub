@@ -963,7 +963,7 @@ function Index() {
                 href="https://www.instagram.com/ruralplanner.oficial"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-brand-neon py-3.5 font-display text-xs uppercase tracking-wide text-black transition hover:scale-[1.02]"
+                className="soft-pulse mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-brand-neon py-3.5 font-display text-xs uppercase tracking-wide text-black transition hover:scale-[1.02]"
               >
                 <Instagram className="h-4 w-4" />
                 Ver @ruralplanner.oficial no Instagram
