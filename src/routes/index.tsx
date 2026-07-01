@@ -263,7 +263,7 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
 
         <ul className="mt-5 space-y-2.5 rounded-xl border border-white/10 bg-white/5 p-4 text-sm">
           <li className="flex items-center gap-2"><Check className="h-4 w-4 text-amber-400" /> <span className="font-semibold">Tudo do Plano Básico</span></li>
-          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-amber-400" /> <span className="font-semibold">6 BÔNUS INCLUSOS</span> <span className="text-slate-400">(Pack Rural, ROI, Irrigação e +)</span></li>
+          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-amber-400" /> <span className="font-semibold">6 BÔNUS INCLUSOS</span> <span className="text-sm text-slate-400">(Pack Rural, ROI, Irrigação e +)</span></li>
           <li className="flex items-center gap-2"><Check className="h-4 w-4 text-amber-400" /> <span className="font-semibold">Suporte prioritário via WhatsApp</span></li>
         </ul>
 
