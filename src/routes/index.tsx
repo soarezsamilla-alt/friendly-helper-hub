@@ -249,6 +249,23 @@ function Index() {
         </div>
       </section>
 
+      {/* PROJETOS POR DENTRO */}
+      <section className="bg-brand-bg-2 px-4 py-20">
+        <div className="mx-auto max-w-6xl">
+          <SectionTitle>
+            📖 Veja como são os{" "}
+            <span className="bg-brand-neon px-2 text-brand-bg">PROJETOS POR DENTRO</span>
+          </SectionTitle>
+          <p className="mt-4 text-center text-slate-400">
+            +100 plantas profissionais com medidas reais, prontas para aplicar.
+          </p>
+
+          <div className="mt-12">
+            <ProjetosCarousel />
+          </div>
+        </div>
+      </section>
+
       {/* SEM x COM PROJETOS */}
       <section className="px-4 py-20">
         <div className="mx-auto max-w-5xl">
@@ -319,22 +336,6 @@ function Index() {
         </div>
       </section>
 
-      {/* PROJETOS POR DENTRO */}
-      <section className="bg-brand-bg-2 px-4 py-20">
-        <div className="mx-auto max-w-6xl">
-          <SectionTitle>
-            📖 Veja como são os{" "}
-            <span className="bg-brand-neon px-2 text-brand-bg">PROJETOS POR DENTRO</span>
-          </SectionTitle>
-          <p className="mt-4 text-center text-slate-400">
-            +100 plantas profissionais com medidas reais, prontas para aplicar.
-          </p>
-
-          <div className="mt-12">
-            <ProjetosCarousel />
-          </div>
-        </div>
-      </section>
 
       {/* RESULTADO NA HORA */}
       <section className="px-4 py-20">
