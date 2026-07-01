@@ -440,12 +440,10 @@ function Index() {
                   ACESSO IMEDIATO
                 </span>
                 <img
-                  src={kitMockup}
+                  src={heroMockupAsset.url}
                   alt="Kit +100 Projetos"
-                  width={1200}
-                  height={900}
                   loading="lazy"
-                  className="w-full"
+                  className="w-full h-auto"
                 />
               </div>
               <div>
