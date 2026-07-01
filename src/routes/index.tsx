@@ -688,7 +688,7 @@ function Index() {
               <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto my-6 h-44 w-auto object-contain" />
               <ul className="space-y-3 text-sm">
                 <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> +100 Projetos de Sítio Produtivo</li>
-                <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 4 Bônus Exclusivos</li>
+                <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 6 Bônus Exclusivos</li>
               </ul>
               <div className="mt-8 text-center">
                 <p className="text-xs text-slate-500 line-through">de R$97,00 por:</p>
