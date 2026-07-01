@@ -101,11 +101,12 @@ function Index() {
           </p>
 
           {/* Hero mockup */}
-          <div className="mx-auto mt-10 w-full max-w-2xl">
+          <div className="relative mx-auto mt-10 w-full max-w-2xl">
+            <div className="hero-mockup-glow pointer-events-none absolute inset-0 -z-10 blur-2xl" />
             <img
               src={heroMockup}
               alt="Mockup do kit +100 Projetos de Sítios e Chácaras Produtivas"
-              className="h-auto w-full"
+              className="hero-mockup-float h-auto w-full"
               loading="eager"
             />
           </div>
