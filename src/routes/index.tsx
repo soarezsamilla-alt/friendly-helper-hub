@@ -915,7 +915,7 @@ function Index() {
                   className="aspect-square w-full rounded-lg object-cover"
                 />
                 <img
-                  src={amostra03.url}
+                  src="https://www.image2url.com/r2/default/images/1782915712991-6f947836-387f-4541-b291-06f0cddc7f13.jpeg"
                   alt="Preview Instagram 3"
                   loading="lazy"
                   className="aspect-square w-full rounded-lg object-cover"
