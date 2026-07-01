@@ -777,7 +777,9 @@ function Index() {
               <h3 className="text-center font-display text-2xl uppercase">PLANO BÁSICO</h3>
               <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto my-6 h-72 md:h-80 w-auto object-contain" />
               <ul className="space-y-3 text-sm">
-                <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> +100 Projetos de Sítio Produtivo</li>
+                <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> +100 projetos completos</li>
+                <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> Acesso imediato após compra</li>
+                <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> Garantia de 7 dias</li>
                 <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 6 Bônus Exclusivos</li>
               </ul>
               <div className="mt-8 text-center">
