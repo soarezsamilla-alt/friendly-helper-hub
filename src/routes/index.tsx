@@ -483,7 +483,7 @@ function Index() {
                 </ul>
 
                 <p className="mt-6 text-center font-bold text-brand-red">
-                  + 4 BÔNUS EXCLUSIVOS ABAIXO 👇
+                  + 6 BÔNUS EXCLUSIVOS ABAIXO 👇
                 </p>
               </div>
             </div>
