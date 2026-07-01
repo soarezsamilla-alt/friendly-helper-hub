@@ -18,10 +18,12 @@ import {
 import beforeAfter from "@/assets/before-after.jpg";
 import resultado from "@/assets/resultado.jpg";
 import kitMockup from "@/assets/kit-mockup.png";
-import bonus1 from "@/assets/bonus1.jpg";
-import bonus2 from "@/assets/bonus2.jpg";
-import bonus3 from "@/assets/bonus3.jpg";
-import bonus4 from "@/assets/bonus4.jpg";
+const bonus1 = "https://www.image2url.com/r2/default/images/1782875887848-660ae212-fba5-4775-a685-303df39ba460.png";
+const bonus2 = "https://www.image2url.com/r2/default/images/1782875989902-a913e28e-2c01-429c-997c-a56f11b63560.png";
+const bonus3 = "https://www.image2url.com/r2/default/images/1782876029236-fb9204f7-a5ee-4aff-b279-633f92f0640c.png";
+const bonus4 = "https://www.image2url.com/r2/default/images/1782876162413-78aa6ea1-66fb-4a5f-ab4e-832da089c294.png";
+const bonus5 = "https://www.image2url.com/r2/default/images/1782876238352-3bb5855b-9042-4eb4-a7e1-02207dc04a29.png";
+const bonus6 = "https://www.image2url.com/r2/default/images/1782876488561-f37692f5-6ba3-4736-bda8-b0ed049f92ed.png";
 import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
