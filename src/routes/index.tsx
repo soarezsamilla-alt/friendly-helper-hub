@@ -1002,9 +1002,9 @@ function Index() {
 
       {/* FOOTER */}
       <footer className="bg-white px-4 py-12 text-center text-slate-700">
-        <div className="font-display text-xl italic">SÍTIO PRODUTIVO PRIME</div>
+        <div className="font-display text-xl italic">RURAL PLANNER</div>
         <p className="mt-6 text-[11px] uppercase tracking-wider text-slate-400">
-          © {new Date().getFullYear()} Sítio Produtivo Prime. Todos os direitos reservados.
+          © {new Date().getFullYear()} Rural Planner. Todos os direitos reservados.
         </p>
         <div className="mt-3 flex justify-center gap-4 text-[11px] text-slate-500">
           <a href="#" className="hover:underline">TERMOS DE USO</a>
