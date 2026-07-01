@@ -285,12 +285,12 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
           QUERO O PLANO COMPLETO POR R$ 19,90
         </a>
 
-        <button
-          onClick={onClose}
-          className="mt-4 w-full text-center text-[11px] font-semibold uppercase tracking-wider text-slate-400 underline underline-offset-4 hover:text-white"
+        <a
+          href="https://pay.wiapy.com/rtXyisd1bF"
+          className="mt-4 block w-full text-center text-[11px] font-semibold uppercase tracking-wider text-slate-400 underline underline-offset-4 hover:text-white"
         >
           Não, obrigado. Prefiro o Plano Básico de R$ 9,90
-        </button>
+        </a>
       </div>
     </div>
   );
