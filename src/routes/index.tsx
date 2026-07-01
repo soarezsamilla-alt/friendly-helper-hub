@@ -132,9 +132,6 @@ function Index() {
             </div>
           </div>
 
-          <div className="mt-8 flex justify-center">
-            <NeonCTA className="w-full max-w-md uppercase">Quero os Projetos Agora</NeonCTA>
-          </div>
         </div>
 
         {/* Sale notification */}
