@@ -651,7 +651,7 @@ function Index() {
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { n: 1, img: bonus1, title: "PROJETOS DE CONSTRUÇÃO RURAL", text: "Plantas detalhadas para galpões, cercas e pequenas pontes para otimizar sua estrutura." },
+              { n: 1, img: bonus1, title: "Pack de Construções Rurais", text: "Plantas detalhadas para galpões, cercas e pequenas pontes para otimizar sua estrutura." },
               { n: 2, img: bonus2, title: "PLANILHA DE LUCRO POR ÁREA", text: "Ferramenta prática para calcular a viabilidade financeira de cada cultivo no seu terreno." },
               { n: 3, img: bonus3, title: "GUIA DE PLANTIO INTELIGENTE", text: "Técnicas de consórcio de culturas para maximizar a colheita em espaços reduzidos." },
               { n: 4, img: bonus4, title: "MANUAL DE ENERGIA RURAL", text: "Como implementar soluções simples de energia solar e biodigestores no seu sítio." },
