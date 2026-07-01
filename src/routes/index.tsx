@@ -655,7 +655,7 @@ function Index() {
               { n: 2, img: bonus2, title: "Planilha de ROI Produtivo", text: "Ferramenta prática para calcular a viabilidade financeira de cada cultivo no seu terreno." },
               { n: 3, img: bonus3, title: "Guia de Plantas Companheiras", text: "Técnicas de consórcio de culturas para maximizar a colheita em espaços reduzidos." },
               { n: 4, img: bonus4, title: "Manual de Energia Solar Rural", text: "Como implementar soluções simples de energia solar e biodigestores no seu sítio." },
-              { n: 5, img: bonus5, title: "Manual de Criação de Animais", text: "Dimensione sistemas solares para casas rurais, poços artesianos e irrigação. Cálculos passo a passo." },
+              { n: 5, img: bonus5, title: "Manual de Criação de Animais", text: "Galinhas, cabras, porcos e peixes: o guia completo de manejo para criar com segurança e gerar renda." },
               { n: 6, img: bonus6, title: "Manual de Criação de Animais", text: "Galinhas, cabras, porcos e peixes: o guia completo de manejo para criar com segurança e gerar renda." },
             ].map(({ n, img, title, text }) => (
               <div
