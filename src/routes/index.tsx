@@ -760,7 +760,7 @@ function Index() {
 
           <div className="mt-12 divide-y divide-slate-200 border-y border-slate-200">
             {[
-              { q: "O que vem incluso no pacote?", a: "Você recebe os +100 projetos completos de sítios produtivos com medidas reais e, no Plano Completo, os 4 bônus exclusivos." },
+              { q: "O que vem incluso no pacote?", a: "Você recebe os +100 projetos completos de sítios produtivos com medidas reais e, no Plano Completo, os 6 bônus exclusivos." },
               { q: "Como vou ter acesso ao material?", a: "Após a compra, você recebe o acesso imediato no seu e-mail e também no WhatsApp cadastrado." },
               { q: "O material é digital ou físico?", a: "100% digital. Você pode acessar pelo celular, tablet ou computador, e imprimir se quiser." },
               { q: "Para quem é indicado esse material?", a: "Para qualquer pessoa que tenha sítio, chácara ou terreno e queira organizar e gerar renda com a terra." },
