@@ -171,6 +171,41 @@ function ProjetosCarousel() {
   );
 }
 
+const depoimentos = [
+  "https://www.image2url.com/r2/default/images/1777691489540-4926818b-d1db-4555-9b0e-718560dcd623.blob",
+  "https://www.image2url.com/r2/default/images/1777691532042-58e8f315-ef7d-4a37-aac5-b438cf83b1eb.blob",
+  "https://www.image2url.com/r2/default/images/1777782633042-fb94fc07-698d-4726-8b93-3c4921df8fd1.blob",
+  "https://www.image2url.com/r2/default/images/1777738144202-1c5f5c59-9222-4ddb-9aed-e54d7498b57b.blob",
+];
+
+function DepoimentosCarousel() {
+  const autoplay = useRef(Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true }));
+  return (
+    <Carousel
+      opts={{ loop: true, align: "center" }}
+      plugins={[autoplay.current]}
+      className="mx-auto w-full max-w-3xl px-8 sm:px-12"
+    >
+      <CarouselContent>
+        {depoimentos.map((src, i) => (
+          <CarouselItem key={i} className="basis-full">
+            <img
+              src={src}
+              alt={`Depoimento ${i + 1}`}
+              loading="lazy"
+              className="mx-auto h-auto w-auto max-w-full object-contain"
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious className="left-0 border-brand-neon/40 bg-brand-neon text-brand-bg hover:bg-brand-neon-2" />
+      <CarouselNext className="right-0 border-brand-neon/40 bg-brand-neon text-brand-bg hover:bg-brand-neon-2" />
+    </Carousel>
+  );
+}
+
+
+
 
 function Index() {
   return (
