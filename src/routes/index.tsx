@@ -726,6 +726,8 @@ function Index() {
                   "Bônus #2: Planilha de Lucros",
                   "Bônus #3: Guia de Plantio Inteligente",
                   "Bônus #4: Manual de Energia Rural",
+                  "Bônus #5: Manual de Energia Rural",
+                  "Bônus #6: Manual de Energia Rural",
                   "Acesso Vitalício",
                 ].map((t) => (
                   <li key={t} className="flex items-center gap-2">
