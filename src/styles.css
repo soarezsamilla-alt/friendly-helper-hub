@@ -181,3 +181,37 @@
   background: radial-gradient(closest-side, rgba(196, 255, 46, 0.35), transparent 70%);
   animation: hero-glow-pulse 4s ease-in-out infinite;
 }
+
+@keyframes neon-cta-pulse {
+  0%, 100% {
+    box-shadow: 0 10px 40px -10px #c4ff2e, 0 0 0 0 rgba(196, 255, 46, 0.55);
+  }
+  50% {
+    box-shadow: 0 10px 55px -8px #c4ff2e, 0 0 0 14px rgba(196, 255, 46, 0);
+  }
+}
+
+@keyframes neon-cta-shine {
+  0% { transform: translateX(-150%) skewX(-20deg); }
+  60%, 100% { transform: translateX(250%) skewX(-20deg); }
+}
+
+.neon-cta {
+  animation: neon-cta-pulse 2.2s ease-in-out infinite;
+}
+
+.neon-cta__shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.7) 50%,
+    transparent 100%
+  );
+  animation: neon-cta-shine 3s ease-in-out infinite;
+  pointer-events: none;
+}
