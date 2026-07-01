@@ -784,7 +784,7 @@ function Index() {
 
           <div className="mt-6 flex justify-center">
             <span className="inline-flex items-center gap-2 rounded-full bg-red-50 px-4 py-1.5 text-xs font-semibold text-brand-red">
-              <Clock className="h-3.5 w-3.5" /> OFERTA DISPONÍVEL SOMENTE HOJE, 30/06/2026
+              <Clock className="h-3.5 w-3.5" /> OFERTA DISPONÍVEL SOMENTE HOJE, {(() => { const d = new Date(); d.setDate(d.getDate() + 1); return d.toLocaleDateString("pt-BR"); })()}
             </span>
           </div>
 
