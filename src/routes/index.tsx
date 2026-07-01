@@ -798,7 +798,7 @@ function Index() {
 
             {/* Plano Completo */}
             <div className="relative rounded-3xl bg-lime-50 p-8 ring-2 ring-brand-neon shadow-xl">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-bg px-4 py-1 text-[6px] font-bold uppercase tracking-wide text-brand-neon">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-bg px-4 py-1 text-[8px] font-bold uppercase tracking-wide text-brand-neon">
                 Mais Vendido · Plano Completo
               </span>
               <h3 className="text-center font-display text-2xl uppercase">PLANO COMPLETO</h3>
@@ -837,7 +837,7 @@ function Index() {
               >
                 QUERO ADQUIRIR O MEU <ArrowRight className="h-4 w-4" />
               </a>
-              <p className="mt-4 text-center text-[6px] font-bold text-brand-red">
+              <p className="mt-4 text-center text-xs font-bold text-brand-red">
                 🔥 APROVEITE AGORA: VOCÊ NÃO VAI ENCONTRAR ESSE PREÇO DEPOIS!
               </p>
               <p className="mt-1 text-center text-[10px] text-slate-500">7 dias de garantia incondicional</p>
