@@ -323,7 +323,7 @@ function Index() {
       {/* Top urgency bar */}
       <div className="sticky top-0 z-50 flex items-center justify-center gap-2 bg-brand-red px-4 py-2.5 text-center text-xs font-bold uppercase tracking-wide text-white sm:text-sm">
         <Clock className="h-4 w-4" />
-        Oferta disponível apenas hoje, {tomorrow}
+        OFERTA DISPONÍVEL ATÉ O DIA, {tomorrow}
       </div>
 
 
