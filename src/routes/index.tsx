@@ -14,6 +14,8 @@ import {
   Mail,
   Phone,
   ArrowRight,
+  ArrowRight,
+  Sparkles,
 } from "lucide-react";
 import beforeAfter from "@/assets/before-after.jpg";
 import resultado from "@/assets/resultado.jpg";
