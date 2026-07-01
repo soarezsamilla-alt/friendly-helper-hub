@@ -653,7 +653,7 @@ function Index() {
             {[
               { n: 1, img: bonus1, title: "Pack de Construções Rurais", text: "Plantas detalhadas para galpões, cercas e pequenas pontes para otimizar sua estrutura." },
               { n: 2, img: bonus2, title: "Planilha de ROI Produtivo", text: "Ferramenta prática para calcular a viabilidade financeira de cada cultivo no seu terreno." },
-              { n: 3, img: bonus3, title: "GUIA DE PLANTIO INTELIGENTE", text: "Técnicas de consórcio de culturas para maximizar a colheita em espaços reduzidos." },
+              { n: 3, img: bonus3, title: "Guia de Plantas Companheiras", text: "Técnicas de consórcio de culturas para maximizar a colheita em espaços reduzidos." },
               { n: 4, img: bonus4, title: "MANUAL DE ENERGIA RURAL", text: "Como implementar soluções simples de energia solar e biodigestores no seu sítio." },
               { n: 5, img: bonus5, title: "MANUAL DE ENERGIA RURAL", text: "Como implementar soluções simples de energia solar e biodigestores no seu sítio." },
               { n: 6, img: bonus6, title: "MANUAL DE ENERGIA RURAL", text: "Como implementar soluções simples de energia solar e biodigestores no seu sítio." },
