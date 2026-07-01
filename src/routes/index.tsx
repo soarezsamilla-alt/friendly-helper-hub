@@ -315,11 +315,79 @@ function useTomorrowDate() {
   return date;
 }
 
+const SALES_BUYERS = [
+  { name: "Mateus D.", city: "Altamira, PA" },
+  { name: "Joana R.", city: "Uberlândia, MG" },
+  { name: "Carlos S.", city: "Chapecó, SC" },
+  { name: "Fernanda L.", city: "Petrolina, PE" },
+  { name: "Rafael M.", city: "Cuiabá, MT" },
+  { name: "Ana Paula", city: "Goiânia, GO" },
+  { name: "Roberto A.", city: "Feira de Santana, BA" },
+  { name: "Juliana P.", city: "Londrina, PR" },
+  { name: "Pedro H.", city: "Campo Grande, MS" },
+  { name: "Luciana F.", city: "Ribeirão Preto, SP" },
+  { name: "Diego O.", city: "Palmas, TO" },
+  { name: "Marcos V.", city: "Caruaru, PE" },
+  { name: "Camila T.", city: "Rio Branco, AC" },
+  { name: "Thiago B.", city: "Dourados, MS" },
+  { name: "Patrícia N.", city: "Sinop, MT" },
+];
+
+function SalesPopup() {
+  const [index, setIndex] = useState(0);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    let mounted = true;
+    const show = () => {
+      if (!mounted) return;
+      setIndex((i) => (i + 1) % SALES_BUYERS.length);
+      setVisible(true);
+      setTimeout(() => mounted && setVisible(false), 3200);
+    };
+    const t0 = setTimeout(show, 1500);
+    const iv = setInterval(show, 4000);
+    return () => {
+      mounted = false;
+      clearTimeout(t0);
+      clearInterval(iv);
+    };
+  }, []);
+
+  const buyer = SALES_BUYERS[index];
+  const mins = 1 + (index % 8);
+
+  return (
+    <div
+      className={`fixed bottom-4 left-4 z-[60] max-w-[300px] transition-all duration-500 ${
+        visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
+      }`}
+      role="status"
+      aria-live="polite"
+    >
+      <div className="flex items-center gap-3 rounded-xl border border-brand-neon/40 bg-brand-bg/95 p-3 shadow-2xl shadow-brand-neon/20 backdrop-blur">
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-neon/15 text-brand-neon">
+          <Check className="h-5 w-5" />
+        </div>
+        <div className="min-w-0 text-left">
+          <p className="truncate text-sm font-semibold text-white">
+            {buyer.name} garantiu o Plano Completo
+          </p>
+          <p className="truncate text-xs text-white/60">
+            {buyer.city} · Há {mins} min
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Index() {
   const [upsellOpen, setUpsellOpen] = useState(false);
   const tomorrow = useTomorrowDate();
   return (
     <div className="min-h-screen bg-brand-bg font-sans text-white antialiased">
+      <SalesPopup />
       {/* Top urgency bar */}
       <div className="sticky top-0 z-50 flex items-center justify-center gap-2 bg-brand-red px-4 py-2.5 text-center text-xs font-bold uppercase tracking-wide text-white sm:text-sm">
         <Clock className="h-4 w-4" />
