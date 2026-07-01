@@ -766,7 +766,7 @@ function Index() {
               { q: "Para quem é indicado esse material?", a: "Para qualquer pessoa que tenha sítio, chácara ou terreno e queira organizar e gerar renda com a terra." },
               { q: "Preciso de conhecimento prévio para usar?", a: "Não. Os projetos foram feitos para qualquer pessoa aplicar, mesmo sem experiência técnica." },
               { q: "Funciona para quem tem pouco espaço?", a: "Sim! Há projetos para áreas pequenas, médias e grandes." },
-              { q: "Qual a diferença entre o Plano Básico e o Completo?", a: "O Básico inclui apenas os projetos. O Completo inclui projetos + os 4 bônus exclusivos." },
+              { q: "Qual a diferença entre o Plano Básico e o Completo?", a: "O Básico inclui apenas os projetos. O Completo inclui projetos + os 6 bônus exclusivos." },
               { q: "Vou precisar investir muito dinheiro para aplicar?", a: "Não. Os projetos são pensados para começar pequeno, com baixo investimento e ir escalando." },
               { q: "E se eu não gostar do material?", a: "Você tem 7 dias de garantia incondicional. Pediu reembolso, devolvemos 100% do valor." },
             ].map((item) => (
