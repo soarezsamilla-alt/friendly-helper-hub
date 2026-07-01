@@ -252,7 +252,7 @@ function Index() {
       {/* PROJETOS POR DENTRO */}
       <section className="bg-white px-4 py-20 text-black">
         <div className="mx-auto max-w-6xl">
-          <SectionTitle className="text-black">
+          <SectionTitle className="!text-black">
             📖 Veja como são os{" "}
             <span className="bg-brand-neon px-2 text-brand-bg">PROJETOS POR DENTRO</span>
           </SectionTitle>
