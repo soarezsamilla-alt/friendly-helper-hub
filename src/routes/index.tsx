@@ -837,7 +837,7 @@ function Index() {
               >
                 QUERO ADQUIRIR O MEU <ArrowRight className="h-4 w-4" />
               </a>
-              <p className="mt-4 text-center text-xs font-bold text-brand-red">
+              <p className="mt-4 text-center text-[6px] font-bold text-brand-red">
                 🔥 APROVEITE AGORA: VOCÊ NÃO VAI ENCONTRAR ESSE PREÇO DEPOIS!
               </p>
               <p className="mt-1 text-center text-[10px] text-slate-500">7 dias de garantia incondicional</p>
