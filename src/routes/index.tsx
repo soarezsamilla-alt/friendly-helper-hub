@@ -913,6 +913,9 @@ function Index() {
           tenha a melhor experiência possível.
         </p>
       </footer>
+
+      <UpsellModal open={upsellOpen} onClose={() => setUpsellOpen(false)} />
+
     </div>
   );
 }
