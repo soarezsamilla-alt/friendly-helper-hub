@@ -568,49 +568,7 @@ function Index() {
       </section>
 
 
-      {/* IDEAL PARA VOCÊ */}
-      <section className="bg-white px-4 py-20 text-slate-900">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-center font-display text-3xl uppercase leading-tight sm:text-5xl">
-            Ideal para você <br /> que:
-          </h2>
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                icon: Smartphone,
-                title: "TEM SÍTIO OU TERRENO E QUER GERAR RENDA",
-                text: "Você tem a terra, mas ela está parada ou subutilizada. Nossos projetos mostram como rentabilizar cada metro.",
-              },
-              {
-                icon: Clock,
-                title: "NÃO SABE COMO DIVIDIR A ÁREA",
-                text: "Dúvida sobre onde plantar, onde criar animais ou onde construir? Os layouts resolvem a organização do espaço.",
-              },
-              {
-                icon: Target,
-                title: "QUER PARAR DE PERDER DINHEIRO",
-                text: "Investir sem plano é prejuízo certo. Com medidas reais, você evita gastos desnecessários com erro de execução.",
-              },
-              {
-                icon: MessageCircle,
-                title: "QUER ALGO PRONTO E APLICÁVEL",
-                text: "Sem teorias complexas. Você recebe a planta, pega a trena e começa a marcar seu novo sítio produtivo.",
-              },
-            ].map(({ icon: Icon, title, text }) => (
-              <div key={title} className="rounded-2xl bg-blue-50 p-6">
-                <div className="grid h-11 w-11 place-items-center rounded-xl bg-blue-600">
-                  <Icon className="h-5 w-5 text-white" />
-                </div>
-                <h3 className="mt-5 font-display text-sm uppercase leading-tight text-slate-900">
-                  {title}
-                </h3>
-                <p className="mt-3 text-xs leading-relaxed text-slate-600">{text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* KIT INCLUSO */}
       <section id="comprar" className="px-4 py-20">
