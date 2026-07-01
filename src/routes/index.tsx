@@ -45,7 +45,84 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { useRef } from "react";
+import { useRef, useState, useCallback } from "react";
+
+function BeforeAfterSlider({ src, alt }: { src: string; alt: string }) {
+  const [pos, setPos] = useState(50);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const draggingRef = useRef(false);
+
+  const updateFromClientX = useCallback((clientX: number) => {
+    const el = containerRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const pct = ((clientX - rect.left) / rect.width) * 100;
+    setPos(Math.max(0, Math.min(100, pct)));
+  }, []);
+
+  const onPointerDown = (e: React.PointerEvent) => {
+    draggingRef.current = true;
+    (e.target as Element).setPointerCapture?.(e.pointerId);
+    updateFromClientX(e.clientX);
+  };
+  const onPointerMove = (e: React.PointerEvent) => {
+    if (!draggingRef.current) return;
+    updateFromClientX(e.clientX);
+  };
+  const onPointerUp = (e: React.PointerEvent) => {
+    draggingRef.current = false;
+    (e.target as Element).releasePointerCapture?.(e.pointerId);
+  };
+
+  return (
+    <div
+      ref={containerRef}
+      onPointerDown={onPointerDown}
+      onPointerMove={onPointerMove}
+      onPointerUp={onPointerUp}
+      onPointerCancel={onPointerUp}
+      className="relative aspect-[16/9] w-full cursor-ew-resize select-none overflow-hidden rounded-2xl touch-none"
+      role="slider"
+      aria-label={alt}
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-valuenow={Math.round(pos)}
+    >
+      {/* Base: SEM (metade esquerda esticada) */}
+      <div
+        className="absolute inset-0 bg-no-repeat"
+        style={{ backgroundImage: `url(${src})`, backgroundSize: "200% 100%", backgroundPosition: "0% 0%" }}
+      />
+      {/* Top: COM (metade direita esticada), clipada pela posição */}
+      <div
+        className="absolute inset-0 bg-no-repeat"
+        style={{
+          backgroundImage: `url(${src})`,
+          backgroundSize: "200% 100%",
+          backgroundPosition: "100% 0%",
+          clipPath: `inset(0 0 0 ${pos}%)`,
+        }}
+      />
+      {/* Divider */}
+      <div className="pointer-events-none absolute inset-y-0 w-0.5 bg-white/90 shadow-[0_0_10px_rgba(0,0,0,0.4)]" style={{ left: `${pos}%`, transform: "translateX(-50%)" }} />
+      {/* Handle */}
+      <div
+        className="pointer-events-none absolute top-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white shadow-lg"
+        style={{ left: `${pos}%` }}
+      >
+        <ChevronLeft className="h-4 w-4 text-slate-900" />
+        <ChevronRight className="absolute right-1 h-4 w-4 text-slate-900" />
+      </div>
+      <span className="pointer-events-none absolute left-4 top-4 inline-flex items-center gap-2 rounded-md bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-900">
+        <X className="h-4 w-4 text-red-500" /> SEM OS PROJETOS
+      </span>
+      <span className="pointer-events-none absolute right-4 top-4 inline-flex items-center gap-2 rounded-md bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-900">
+        <Check className="h-4 w-4 text-green-600" /> COM +100 PROJETOS
+      </span>
+    </div>
+  );
+}
+
 
 const amostras = [
   amostra01, amostra02, amostra03, amostra04, amostra05,
@@ -276,27 +353,10 @@ function Index() {
             <span className="bg-brand-neon px-2 text-brand-bg">COM OS PROJETOS</span>
           </SectionTitle>
 
-          <div className="relative mt-10 overflow-hidden rounded-2xl">
-            <img
-              src={beforeAfter}
-              alt="Comparação sem e com os projetos"
-              width={1600}
-              height={900}
-              loading="lazy"
-              className="w-full"
-            />
-            <div className="absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-white/70" />
-            <div className="absolute left-1/2 top-1/2 grid h-12 w-12 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white shadow-lg">
-              <ChevronLeft className="h-4 w-4 text-slate-900" />
-              <ChevronRight className="absolute right-1 h-4 w-4 text-slate-900" />
-            </div>
-            <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-md bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-900">
-              <X className="h-4 w-4 text-red-500" /> SEM OS PROJETOS
-            </span>
-            <span className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-md bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-900">
-              <Check className="h-4 w-4 text-green-600" /> COM +100 PROJETOS
-            </span>
+          <div className="mt-10">
+            <BeforeAfterSlider src={beforeAfter} alt="Comparação sem e com os projetos" />
           </div>
+
 
           <div className="mt-10 grid gap-4 rounded-2xl bg-slate-100 p-6 text-slate-900 md:grid-cols-2">
             <div>
