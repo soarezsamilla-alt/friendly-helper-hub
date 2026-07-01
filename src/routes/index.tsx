@@ -785,12 +785,13 @@ function Index() {
                 <p className="font-display text-4xl text-slate-900">R$9,90</p>
                 <p className="text-xs text-slate-500">pagamento único</p>
               </div>
-              <a
-                href={CTA_URL}
+              <button
+                type="button"
+                onClick={() => setUpsellOpen(true)}
                 className="mt-6 flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white py-4 font-display text-sm uppercase text-slate-600 transition hover:bg-slate-50"
               >
                 QUERO O BÁSICO <ArrowRight className="h-4 w-4" />
-              </a>
+              </button>
             </div>
 
             {/* Plano Completo */}
