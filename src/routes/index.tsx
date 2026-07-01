@@ -685,9 +685,6 @@ function Index() {
             ))}
           </div>
 
-          <div className="mt-12 flex justify-center">
-            <NeonCTA>QUERO MEU ACESSO AGORA</NeonCTA>
-          </div>
         </div>
       </section>
 
