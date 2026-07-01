@@ -814,14 +814,16 @@ function Index() {
               </div>
               <ul className="space-y-2.5 text-sm">
                 {[
-                  "+100 Projetos de Sítio Produtivo",
-                  "Bônus #1: Construção Rural",
-                  "Bônus #2: Planilha de Lucros",
-                  "Bônus #3: Guia de Plantio Inteligente",
-                  "Bônus #4: Manual de Energia Rural",
-                  "Bônus #5: Manual de Energia Rural",
-                  "Bônus #6: Manual de Energia Rural",
-                  "Acesso Vitalício",
+                  "Tudo do Plano Básico",
+                  "BÔNUS 1: Construções Rurais",
+                  "BÔNUS 2: Planilha ROI Editável",
+                  "BÔNUS 3: Plantas Companheiras",
+                  "BÔNUS 4: Energia Solar Rural",
+                  "BÔNUS 5: Criação de Animais",
+                  "BÔNUS 6: Água e Irrigação Rural",
+                  "Atualizações gratuitas semanal",
+                  "Acesso prioritário a novos projetos",
+                  "Suporte prioritário via WhatsApp",
                 ].map((t) => (
                   <li key={t} className="flex items-center gap-2">
                     <Check className="h-4 w-4 text-emerald-600" /> {t}
