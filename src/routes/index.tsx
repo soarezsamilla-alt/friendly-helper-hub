@@ -868,9 +868,11 @@ function Index() {
               {/* Avatar + username */}
               <div className="flex flex-col items-center">
                 <div className="relative h-24 w-24 rounded-full p-1 ring-2 ring-brand-neon">
-                  <div className="grid h-full w-full place-items-center rounded-full bg-brand-bg font-display text-3xl text-brand-neon">
-                    RP
-                  </div>
+                  <img
+                    src="https://www.image2url.com/r2/default/images/1782914645493-b8502992-e7a6-4f47-bf03-1da828a4648c.jpeg"
+                    alt="Rural Planner"
+                    className="h-full w-full rounded-full object-cover"
+                  />
                 </div>
                 <h3 className="mt-4 font-display text-xl text-white">Rural Planner</h3>
                 <p className="text-sm text-slate-400">@ruralplanner.oficial</p>
