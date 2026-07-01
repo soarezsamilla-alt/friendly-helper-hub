@@ -27,6 +27,30 @@ import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
 import heroMockupAsset from "@/assets/hero-mockup.webp.asset.json";
 const heroMockup = heroMockupAsset.url;
+import amostra01 from "@/assets/amostras/amostra-01.png.asset.json";
+import amostra02 from "@/assets/amostras/amostra-02.png.asset.json";
+import amostra03 from "@/assets/amostras/amostra-03.png.asset.json";
+import amostra04 from "@/assets/amostras/amostra-04.png.asset.json";
+import amostra05 from "@/assets/amostras/amostra-05.png.asset.json";
+import amostra06 from "@/assets/amostras/amostra-06.png.asset.json";
+import amostra07 from "@/assets/amostras/amostra-07.png.asset.json";
+import amostra08 from "@/assets/amostras/amostra-08.png.asset.json";
+import amostra09 from "@/assets/amostras/amostra-09.png.asset.json";
+import amostra10 from "@/assets/amostras/amostra-10.png.asset.json";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { useRef } from "react";
+
+const amostras = [
+  amostra01, amostra02, amostra03, amostra04, amostra05,
+  amostra06, amostra07, amostra08, amostra09, amostra10,
+].map((a) => a.url);
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -80,6 +104,33 @@ function SectionTitle({
     </h2>
   );
 }
+
+function ProjetosCarousel() {
+  const autoplay = useRef(Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true }));
+  return (
+    <Carousel
+      opts={{ loop: true, align: "start" }}
+      plugins={[autoplay.current]}
+      className="mx-auto w-full max-w-5xl px-8 sm:px-12"
+    >
+      <CarouselContent>
+        {amostras.map((src, i) => (
+          <CarouselItem key={i} className="basis-full sm:basis-1/2 lg:basis-1/3">
+            <img
+              src={src}
+              alt={`Amostra ${i + 1}`}
+              loading="lazy"
+              className="mx-auto h-[460px] w-full rounded-xl object-cover ring-1 ring-white/10"
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious className="left-0 border-brand-neon/40 bg-brand-neon text-brand-bg hover:bg-brand-neon-2" />
+      <CarouselNext className="right-0 border-brand-neon/40 bg-brand-neon text-brand-bg hover:bg-brand-neon-2" />
+    </Carousel>
+  );
+}
+
 
 function Index() {
   return (
@@ -351,16 +402,8 @@ function Index() {
             +100 plantas profissionais com medidas reais, prontas para aplicar.
           </p>
 
-          <div className="mt-12 flex gap-4 overflow-x-auto pb-4 [scrollbar-color:#c4ff2e_transparent]">
-            {[project3, project1, project2, project1, project3].map((src, i) => (
-              <img
-                key={i}
-                src={src}
-                alt={`Projeto ${i + 1}`}
-                loading="lazy"
-                className="h-[420px] w-[280px] shrink-0 rounded-xl object-cover ring-1 ring-white/10"
-              />
-            ))}
+          <div className="mt-12">
+            <ProjetosCarousel />
           </div>
         </div>
       </section>
