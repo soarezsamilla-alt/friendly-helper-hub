@@ -647,60 +647,14 @@ function Index() {
 
       {/* DEPOIMENTOS */}
       <section className="px-4 py-20">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-4xl">
           <SectionTitle>
             QUEM JÁ USOU, <span className="bg-brand-neon px-2 text-brand-bg">APROVOU</span>
           </SectionTitle>
 
-          <div className="mt-12 flex items-center justify-center gap-4">
-            <button
-              type="button"
-              aria-label="Anterior"
-              className="grid h-10 w-10 place-items-center rounded-full border border-brand-neon text-brand-neon transition hover:bg-brand-neon hover:text-brand-bg"
-            >
-              <ChevronLeft className="h-5 w-5" />
-            </button>
-
-            <div className="relative w-full max-w-sm rounded-[2.5rem] bg-brand-neon p-2 shadow-2xl">
-              <div className="rounded-[2rem] bg-white p-4">
-                <div className="flex items-center gap-2 border-b border-slate-200 pb-2 text-xs text-slate-600">
-                  <div className="h-8 w-8 rounded-full bg-emerald-500" />
-                  <div>
-                    <div className="font-bold text-slate-900">Zé Augusto - GO</div>
-                    <div className="text-[10px] text-emerald-600">online</div>
-                  </div>
-                </div>
-                <div className="mt-3 space-y-2 text-[11px] leading-relaxed text-slate-700">
-                  <p className="rounded-lg bg-amber-50 p-2">
-                    Boa noite, amigo. Tô passando pra te agradecer pelo material dos projetos.
-                  </p>
-                  <p className="rounded-lg bg-amber-50 p-2">
-                    Eu tava com esse pedacinho de terra largado aqui no sítio e sem rumo. Depois que
-                    olhei os projetos, ajeitei melhor o espaço e já fiz minha hortinha, um cercadinho
-                    pras galinhas e comecei um pomarzinho.
-                  </p>
-                  <p className="rounded-lg bg-emerald-100 p-2 text-right">
-                    Boa noite, Zé! Ficou bom demais 👏
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <button
-              type="button"
-              aria-label="Próximo"
-              className="grid h-10 w-10 place-items-center rounded-full border border-brand-neon text-brand-neon transition hover:bg-brand-neon hover:text-brand-bg"
-            >
-              <ChevronRight className="h-5 w-5" />
-            </button>
+          <div className="mt-12">
+            <DepoimentosCarousel />
           </div>
-
-          <div className="mt-6 flex justify-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-brand-neon" />
-            <span className="h-2 w-2 rounded-full bg-slate-600" />
-            <span className="h-2 w-2 rounded-full bg-slate-600" />
-          </div>
-
         </div>
       </section>
 
