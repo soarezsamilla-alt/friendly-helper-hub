@@ -297,15 +297,35 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
   );
 }
 
+function useTomorrowDate() {
+  const [date, setDate] = useState(() => {
+    const d = new Date();
+    d.setDate(d.getDate() + 1);
+    return d.toLocaleDateString("pt-BR");
+  });
+  useEffect(() => {
+    const tick = () => {
+      const d = new Date();
+      d.setDate(d.getDate() + 1);
+      setDate(d.toLocaleDateString("pt-BR"));
+    };
+    const id = setInterval(tick, 60_000);
+    return () => clearInterval(id);
+  }, []);
+  return date;
+}
+
 function Index() {
   const [upsellOpen, setUpsellOpen] = useState(false);
+  const tomorrow = useTomorrowDate();
   return (
     <div className="min-h-screen bg-brand-bg font-sans text-white antialiased">
       {/* Top urgency bar */}
       <div className="flex items-center justify-center gap-2 bg-brand-red px-4 py-2.5 text-center text-xs font-bold uppercase tracking-wide text-white sm:text-sm">
         <Clock className="h-4 w-4" />
-        Oferta disponível apenas hoje, 30/06/2026
+        Oferta disponível apenas hoje, {tomorrow}
       </div>
+
 
       {/* HERO */}
       <section className="relative overflow-hidden px-4 pb-16 pt-12 sm:pt-16">
