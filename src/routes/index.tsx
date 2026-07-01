@@ -375,16 +375,6 @@ function Index() {
 
         </div>
 
-        {/* Sale notification */}
-        <div className="fixed bottom-4 left-4 z-50 hidden max-w-xs rounded-lg bg-white p-3 text-xs text-slate-900 shadow-xl sm:flex sm:items-center sm:gap-3">
-          <div className="grid h-9 w-9 place-items-center rounded bg-green-100">
-            <Check className="h-5 w-5 text-green-600" />
-          </div>
-          <div>
-            <div className="font-bold">Mateus D. garantiu os projetos</div>
-            <div className="text-[10px] uppercase text-slate-500">Altamira PA · Há 3 min</div>
-          </div>
-        </div>
       </section>
 
 
