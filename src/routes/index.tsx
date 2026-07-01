@@ -821,6 +821,8 @@ function Index() {
             </p>
           </div>
         </div>
+      </section>
+
 
       {/* FOOTER */}
       <footer className="bg-white px-4 py-12 text-center text-slate-700">
