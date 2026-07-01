@@ -772,11 +772,11 @@ function Index() {
             <div className="card-border-light rounded-3xl bg-white p-8 shadow-sm">
               <h3 className="text-center font-display text-2xl uppercase">PLANO BÁSICO</h3>
               <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto my-6 h-72 md:h-80 w-auto object-contain" />
-              <ul className="space-y-3 text-sm">
-                <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> +100 projetos completos</li>
-                <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> Acesso imediato após compra</li>
-                <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> Garantia de 7 dias</li>
-                <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 6 Bônus Exclusivos</li>
+              <ul className="space-y-2.5 text-[15px]">
+                <li className="flex items-center gap-3 rounded-lg bg-emerald-50 px-3 py-2.5 font-semibold text-slate-800 ring-1 ring-emerald-100"><Check className="h-5 w-5 flex-shrink-0 text-emerald-600" /> +100 projetos completos</li>
+                <li className="flex items-center gap-3 rounded-lg bg-emerald-50 px-3 py-2.5 font-semibold text-slate-800 ring-1 ring-emerald-100"><Check className="h-5 w-5 flex-shrink-0 text-emerald-600" /> Acesso imediato após compra</li>
+                <li className="flex items-center gap-3 rounded-lg bg-emerald-50 px-3 py-2.5 font-semibold text-slate-800 ring-1 ring-emerald-100"><Check className="h-5 w-5 flex-shrink-0 text-emerald-600" /> Garantia de 7 dias</li>
+                <li className="flex items-center gap-3 rounded-lg bg-slate-50 px-3 py-2.5 text-slate-400 line-through ring-1 ring-slate-100"><X className="h-5 w-5 flex-shrink-0" /> Sem os 6 Bônus Exclusivos</li>
               </ul>
               <div className="mt-8 text-center">
                 <p className="text-xs text-slate-500 line-through">de R$97,00 por:</p>
