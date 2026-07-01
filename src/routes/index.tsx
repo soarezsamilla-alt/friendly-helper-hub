@@ -661,9 +661,6 @@ function Index() {
             <span className="h-2 w-2 rounded-full bg-slate-600" />
           </div>
 
-          <div className="mt-12 flex justify-center">
-            <NeonCTA>QUERO OS PROJETOS AGORA</NeonCTA>
-          </div>
         </div>
       </section>
 
