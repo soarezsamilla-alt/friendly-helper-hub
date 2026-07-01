@@ -786,7 +786,7 @@ function Index() {
               <button
                 type="button"
                 onClick={() => setUpsellOpen(true)}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white py-4 font-display text-sm uppercase text-slate-600 transition hover:bg-slate-50"
+                className="soft-pulse mt-6 flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white py-4 font-display text-sm uppercase text-slate-600 transition hover:bg-slate-50"
               >
                 QUERO O BÁSICO <ArrowRight className="h-4 w-4" />
               </button>
@@ -829,7 +829,7 @@ function Index() {
 
               <a
                 href={CTA_URL}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-brand-neon py-4 font-display text-sm uppercase text-brand-bg shadow-[0_10px_30px_-8px_#c4ff2e] transition hover:scale-[1.02]"
+                className="soft-pulse mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-brand-neon py-4 font-display text-sm uppercase text-brand-bg shadow-[0_10px_30px_-8px_#c4ff2e] transition hover:scale-[1.02]"
               >
                 QUERO ADQUIRIR O MEU <ArrowRight className="h-4 w-4" />
               </a>
