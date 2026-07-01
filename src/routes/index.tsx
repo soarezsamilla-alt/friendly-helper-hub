@@ -280,7 +280,7 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
 
         <a
           href="https://pay.wiapy.com/MowpM6rdLB"
-          className="mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-300 py-4 font-display text-sm uppercase text-black shadow-[0_10px_30px_-8px_rgba(251,191,36,0.6)] transition hover:scale-[1.02]"
+          className="soft-pulse mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-300 py-4 font-display text-sm uppercase text-black shadow-[0_10px_30px_-8px_rgba(251,191,36,0.6)] transition hover:scale-[1.02]"
         >
           QUERO O PLANO COMPLETO POR R$ 19,90
         </a>
