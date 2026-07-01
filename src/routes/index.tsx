@@ -120,7 +120,7 @@ function ProjetosCarousel() {
               src={src}
               alt={`Amostra ${i + 1}`}
               loading="lazy"
-              className="mx-auto h-[460px] w-full rounded-xl object-cover ring-1 ring-white/10"
+              className="mx-auto h-auto w-full rounded-xl object-contain ring-1 ring-black/10"
             />
           </CarouselItem>
         ))}
