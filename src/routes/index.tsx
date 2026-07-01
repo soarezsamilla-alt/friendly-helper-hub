@@ -577,7 +577,7 @@ function Index() {
           </div>
 
           <div className="mt-12 flex justify-center">
-            <NeonCTA>QUERO O KIT + BÔNUS</NeonCTA>
+            <NeonCTA>Quero Meu Projeto por R$ 9,90</NeonCTA>
           </div>
         </div>
       </section>
