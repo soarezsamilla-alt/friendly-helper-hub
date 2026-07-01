@@ -808,7 +808,7 @@ function Index() {
               <div className="mb-4 rounded-xl bg-brand-bg py-2 text-center font-display text-xs uppercase text-white">
                 Todos os Bônus Inclusos
               </div>
-              <ul className="space-y-2.5 text-sm">
+              <ul className="space-y-2 text-[15px]">
                 {[
                   "Tudo do Plano Básico",
                   "BÔNUS 1: Construções Rurais",
@@ -821,8 +821,8 @@ function Index() {
                   "Acesso prioritário a novos projetos",
                   "Suporte prioritário via WhatsApp",
                 ].map((t) => (
-                  <li key={t} className="flex items-center gap-2">
-                    <Check className="h-4 w-4 text-emerald-600" /> {t}
+                  <li key={t} className="flex items-center gap-3 rounded-lg bg-white px-3 py-2.5 font-semibold text-slate-800 shadow-sm ring-1 ring-brand-neon/40">
+                    <Check className="h-5 w-5 flex-shrink-0 text-emerald-600" /> {t}
                   </li>
                 ))}
               </ul>
