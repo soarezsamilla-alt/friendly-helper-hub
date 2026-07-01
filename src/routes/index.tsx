@@ -738,7 +738,7 @@ function Index() {
                 <p className="font-display text-5xl text-slate-900">R$27,90</p>
                 <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
               </div>
-              <img src={heroMockup} alt="Plano Completo" className="mx-auto my-6 h-44 w-auto object-contain" />
+              <img src={heroMockup} alt="Plano Completo" className="hero-mockup-float mx-auto my-6 h-44 w-auto object-contain" />
               <div className="mb-4 rounded-xl bg-brand-bg py-2 text-center font-display text-xs uppercase text-white">
                 Todos os Bônus Inclusos
               </div>
