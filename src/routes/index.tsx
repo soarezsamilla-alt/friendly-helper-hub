@@ -466,7 +466,7 @@ function Index() {
                       "Planos de Divisão por Produção",
                       "Para gado, hortas, pomares e agrofloresta",
                     ],
-                    ["Plantas Prontas para Imprimir", "Leve para o campo e comece a executar"],
+                    ["Plantas Prontas para Aplicar", "Leve para o campo e comece a executar"],
                     [
                       "Acesso Vitalício e Imediato",
                       "Compre uma vez e use para sempre em qualquer terreno",
