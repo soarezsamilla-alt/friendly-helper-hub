@@ -131,6 +131,13 @@ a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
 document.head.appendChild(a);`,
           }}
         />
+        <script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck=""
+          data-utmify-prevent-subids=""
+          async
+          defer
+        />
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2062710850952061&ev=PageView&noscript=1" />`,
