@@ -453,7 +453,7 @@ function Index() {
                   ITEM 01
                 </span>
                 <h3 className="mt-3 font-display text-3xl uppercase leading-tight sm:text-4xl">
-                  Kit +100 Projetos de Sítio Produtivo
+                  +100 Projetos de Sítios e Chácaras Produtivas
                 </h3>
                 <p className="mt-3 text-sm italic text-slate-600">
                   O guia prático para transformar sua terra em um negócio lucrativo.
