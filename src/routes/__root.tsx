@@ -121,6 +121,16 @@ fbq('init', '2062710850952061');
 fbq('track', 'PageView');`,
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.pixelId = "6a453accc31d705179388de1";
+var a = document.createElement("script");
+a.setAttribute("async", "");
+a.setAttribute("defer", "");
+a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+document.head.appendChild(a);`,
+          }}
+        />
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2062710850952061&ev=PageView&noscript=1" />`,
