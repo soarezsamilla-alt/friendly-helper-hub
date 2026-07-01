@@ -15,6 +15,7 @@ import {
   Phone,
   ArrowRight,
   Sparkles,
+  Instagram,
 } from "lucide-react";
 import beforeAfter from "@/assets/before-after.jpg";
 import resultado from "@/assets/resultado.jpg";
@@ -839,6 +840,106 @@ function Index() {
               <p className="mt-1 text-center text-[10px] text-slate-500">7 dias de garantia incondicional</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* INSTAGRAM */}
+      <section className="bg-brand-bg px-4 py-20 text-white">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-card px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-brand-neon ring-1 ring-brand-neon/30">
+            <ChevronLeft className="h-3 w-3" /> ACOMPANHE DE PERTO
+          </span>
+
+          <h2
+            className="mt-6 text-3xl italic leading-tight sm:text-5xl"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
+            Nos siga no Instagram e veja o{" "}
+            <span className="text-amber-400">Rural Planner em ação</span>
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-xl text-sm italic text-slate-300">
+            Dicas de planejamento rural, projetos reais e conteúdo exclusivo toda semana. Ficou com dúvida? É só chamar por lá.
+          </p>
+
+          {/* Instagram profile card */}
+          <div className="mt-10 overflow-hidden rounded-3xl bg-brand-card ring-1 ring-white/10 shadow-2xl">
+            <div className="p-6 sm:p-8">
+              {/* Avatar + username */}
+              <div className="flex flex-col items-center">
+                <div className="relative h-24 w-24 rounded-full p-1 ring-2 ring-brand-neon">
+                  <div className="grid h-full w-full place-items-center rounded-full bg-brand-bg font-display text-3xl text-brand-neon">
+                    RP
+                  </div>
+                </div>
+                <h3 className="mt-4 font-display text-xl text-white">Rural Planner</h3>
+                <p className="text-sm text-slate-400">@ruralplanner.oficial</p>
+              </div>
+
+              {/* Bio */}
+              <div className="mt-4 space-y-1 text-center text-xs text-slate-300">
+                <p>✅ Planejamento rural do jeito certo</p>
+                <p>🌳 +100 projetos profissionais de sítios</p>
+              </div>
+
+              {/* Stats */}
+              <div className="mt-6 grid grid-cols-3 gap-4 border-y border-white/10 py-4">
+                <div className="text-center">
+                  <p className="font-display text-lg text-amber-400">+100</p>
+                  <p className="text-[10px] uppercase tracking-wider text-slate-400">Projetos</p>
+                </div>
+                <div className="text-center">
+                  <p className="font-display text-lg text-amber-400">12 mil</p>
+                  <p className="text-[10px] uppercase tracking-wider text-slate-400">Produtores</p>
+                </div>
+                <div className="text-center">
+                  <p className="font-display text-lg text-amber-400">15+</p>
+                  <p className="text-[10px] uppercase tracking-wider text-slate-400">Anos Exp.</p>
+                </div>
+              </div>
+
+              {/* Preview grid */}
+              <div className="mt-6 grid grid-cols-3 gap-2">
+                <img
+                  src={amostra01.url}
+                  alt="Preview Instagram 1"
+                  loading="lazy"
+                  className="aspect-square w-full rounded-lg object-cover"
+                />
+                <img
+                  src={amostra02.url}
+                  alt="Preview Instagram 2"
+                  loading="lazy"
+                  className="aspect-square w-full rounded-lg object-cover"
+                />
+                <img
+                  src={amostra03.url}
+                  alt="Preview Instagram 3"
+                  loading="lazy"
+                  className="aspect-square w-full rounded-lg object-cover"
+                />
+              </div>
+
+              {/* CTA */}
+              <a
+                href="https://instagram.com/ruralplanner.oficial"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-brand-neon py-3.5 font-display text-xs uppercase tracking-wide text-black transition hover:scale-[1.02]"
+              >
+                <Instagram className="h-4 w-4" />
+                Ver @ruralplanner.oficial no Instagram
+              </a>
+
+              <p className="mt-3 text-center text-[10px] text-slate-400">
+                Ficou com dúvida? Fale com a gente direto no perfil ✓
+              </p>
+            </div>
+          </div>
+
+          <p className="mt-10 text-[10px] uppercase tracking-widest text-slate-500">
+            Conteúdo novo toda semana • Dicas reais de planejamento rural • Sem enrolação
+          </p>
         </div>
       </section>
 
