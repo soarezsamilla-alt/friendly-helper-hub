@@ -105,6 +105,33 @@ function SectionTitle({
   );
 }
 
+function ProjetosCarousel() {
+  const autoplay = useRef(Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true }));
+  return (
+    <Carousel
+      opts={{ loop: true, align: "start" }}
+      plugins={[autoplay.current]}
+      className="mx-auto w-full max-w-5xl px-8 sm:px-12"
+    >
+      <CarouselContent>
+        {amostras.map((src, i) => (
+          <CarouselItem key={i} className="basis-full sm:basis-1/2 lg:basis-1/3">
+            <img
+              src={src}
+              alt={`Amostra ${i + 1}`}
+              loading="lazy"
+              className="mx-auto h-[460px] w-full rounded-xl object-cover ring-1 ring-white/10"
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious className="left-0 border-brand-neon/40 bg-brand-neon text-brand-bg hover:bg-brand-neon-2" />
+      <CarouselNext className="right-0 border-brand-neon/40 bg-brand-neon text-brand-bg hover:bg-brand-neon-2" />
+    </Carousel>
+  );
+}
+
+
 function Index() {
   return (
     <div className="min-h-screen bg-brand-bg font-sans text-white antialiased">
