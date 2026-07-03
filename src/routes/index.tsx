@@ -539,12 +539,18 @@ function Index() {
               loading="lazy"
               className="w-full"
             />
-            <div className="absolute inset-y-0 left-1/2 w-px -translate-x-1/2 bg-white/70" />
-            <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-md bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-900">
-              <X className="h-4 w-4 text-red-500" /> SEM OS PROJETOS
+            <div className="absolute inset-y-0 left-1/2 w-1 -translate-x-1/2 bg-white shadow-[0_0_12px_rgba(255,255,255,0.6)]" />
+            <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-900 shadow-lg">
+              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-red-100">
+                <X className="h-3.5 w-3.5 text-red-500" />
+              </span>
+              Sem os Projetos
             </span>
-            <span className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-md bg-white/95 px-3 py-1.5 text-xs font-bold text-slate-900">
-              <Check className="h-4 w-4 text-green-600" /> COM +100 PROJETOS
+            <span className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-900 shadow-lg">
+              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-green-100">
+                <Check className="h-3.5 w-3.5 text-green-600" />
+              </span>
+              Con +100 Proyectos
             </span>
           </div>
 
