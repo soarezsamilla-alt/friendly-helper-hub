@@ -550,7 +550,7 @@ function Index() {
               <span className="flex h-5 w-5 items-center justify-center rounded-full bg-green-100">
                 <Check className="h-3.5 w-3.5 text-green-600" />
               </span>
-              Con +100 Proyectos
+              Com +100 Projetos
             </span>
           </div>
 
