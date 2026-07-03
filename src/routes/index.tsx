@@ -843,7 +843,7 @@ function Index() {
               <h3 className="text-center font-display text-2xl uppercase">PLANO COMPLETO</h3>
               <CountdownCompleto />
               <div className="mt-2 text-center">
-                <p className="text-xs text-slate-500 line-through">de R$197,00 por:</p>
+                <p className="text-xs text-slate-500 line-through">de R$197,90 por:</p>
                 <p className="font-display text-5xl text-slate-900">R$27,90</p>
                 <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
               </div>
