@@ -822,7 +822,7 @@ function Index() {
                 <li className="flex items-center gap-2 text-slate-400 line-through"><X className="h-4 w-4" /> Sem os 6 Bônus Exclusivos</li>
               </ul>
               <div className="mt-4 text-center">
-                <p className="text-xs text-slate-500 line-through">de R$97,00 por:</p>
+                <p className="text-xs text-slate-500 line-through">de R$97,90 por:</p>
                 <p className="font-display text-4xl text-slate-900">R$9,90</p>
                 <p className="text-xs text-slate-500">pagamento único</p>
               </div>
