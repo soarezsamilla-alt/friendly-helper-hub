@@ -820,14 +820,12 @@ function Index() {
             {/* Plano Básico */}
             <div className="card-border-light rounded-3xl bg-white p-5 shadow-sm">
               <h3 className="text-center font-display text-2xl uppercase">PLANO BÁSICO</h3>
-              <div className="relative mx-auto my-3 h-72 md:h-80 w-full">
-                <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto h-full w-auto object-contain" />
-                <div className="pointer-events-none absolute inset-x-0 bottom-2 text-center drop-shadow-[0_2px_6px_rgba(255,255,255,0.9)]">
-                  <p className="text-xs text-slate-600 line-through">de R$97,90 por:</p>
-                  <p className="font-display text-4xl text-slate-900">R$9,90</p>
-                  <p className="text-xs text-slate-600">pagamento único</p>
-                </div>
+              <div className="mt-2 text-center">
+                <p className="text-xs text-slate-500 line-through">de R$97,90 por:</p>
+                <p className="font-display text-4xl text-slate-900">R$9,90</p>
+                <p className="text-xs text-slate-500">pagamento único</p>
               </div>
+              <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto my-3 h-72 md:h-80 w-auto object-contain" />
               <ul className="space-y-1.5 text-[15px]">
                 <li className="flex items-center gap-2 font-semibold text-slate-900"><Check className="h-4 w-4 text-emerald-600" /> +100 projetos completos</li>
                 <li className="flex items-center gap-2 font-semibold text-slate-900"><Check className="h-4 w-4 text-emerald-600" /> Acesso imediato após compra</li>
