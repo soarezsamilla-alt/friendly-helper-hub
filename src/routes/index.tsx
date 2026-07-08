@@ -278,10 +278,10 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
           <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Upgrade do Plano Completo:</p>
           <p className="mt-1 text-sm text-slate-400 line-through">De R$ 29,90</p>
           <p className="font-display text-xl uppercase tracking-wide text-slate-200">
-            Por apenas R$ <span className="text-5xl text-amber-400">21</span>,90
+            Por apenas R$ <span className="text-5xl text-amber-400">19</span>,90
           </p>
           <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-amber-400">
-            Economia de R$ 8,00 extra hoje!
+            Economia de R$ 10,00 extra hoje!
           </p>
         </div>
 
@@ -289,7 +289,7 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
           href="https://pay.wiapy.com/MowpM6rdLB"
           className="soft-pulse mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-300 py-4 font-display text-sm uppercase text-black shadow-[0_10px_30px_-8px_rgba(251,191,36,0.6)] transition hover:scale-[1.02]"
         >
-          QUERO O PLANO COMPLETO POR R$ 21,90
+          QUERO O PLANO COMPLETO POR R$ 19,90
         </a>
 
         <a
