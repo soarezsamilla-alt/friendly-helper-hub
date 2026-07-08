@@ -234,67 +234,67 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
   const mm = String(Math.floor(left / 60)).padStart(2, "0");
   const ss = String(left % 60).padStart(2, "0");
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
-      <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-[#0b0b14] p-8 text-white ring-1 ring-amber-400/40 shadow-[0_0_60px_-10px_rgba(251,191,36,0.5)]">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm">
+      <div className="relative w-full max-w-md overflow-hidden rounded-3xl bg-lime-50 p-8 text-slate-900 ring-2 ring-brand-neon shadow-[0_20px_60px_-15px_rgba(16,185,129,0.45)]">
         <button
           onClick={onClose}
           aria-label="Fechar"
-          className="absolute right-4 top-4 rounded-full p-1 text-white/60 transition hover:bg-white/10 hover:text-white"
+          className="absolute right-4 top-4 rounded-full p-1 text-slate-500 transition hover:bg-emerald-100 hover:text-slate-900"
         >
           <X className="h-5 w-5" />
         </button>
 
-        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-amber-400/10 ring-1 ring-amber-400/40">
-          <Sparkles className="h-6 w-6 text-amber-400" />
+        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 ring-1 ring-emerald-500/40">
+          <Sparkles className="h-6 w-6 text-emerald-600" />
         </div>
 
-        <h3 className="text-center font-display text-2xl uppercase tracking-wide">
-          E<span className="text-amber-400">$</span>PERE! <span className="text-amber-400">OFERTA ÚNICA</span>
+        <h3 className="text-center font-display text-2xl uppercase tracking-wide text-slate-900">
+          E<span className="text-emerald-600">$</span>PERE! <span className="text-emerald-600">OFERTA ÚNICA</span>
         </h3>
-        <p className="mt-3 text-center text-sm text-slate-300">
+        <p className="mt-3 text-center text-sm text-slate-600">
           Por que levar apenas o básico se você pode ter o{" "}
-          <span className="font-bold text-amber-400">Plano Completo</span>
+          <span className="font-bold text-emerald-700">Plano Completo</span>
           <br />por um valor simbólico de upgrade?
         </p>
 
-        <div className="mt-5 flex items-center justify-center gap-3 rounded-xl border border-amber-400/30 bg-amber-400/5 py-3 text-sm">
-          <Clock className="h-4 w-4 text-amber-400" />
-          <span className="uppercase tracking-wide text-slate-300">A oferta expira em:</span>
-          <span className="font-mono text-lg font-bold text-amber-400">{mm}:{ss}</span>
+        <div className="mt-5 flex items-center justify-center gap-3 rounded-xl border border-emerald-500/30 bg-white py-3 text-sm">
+          <Clock className="h-4 w-4 text-emerald-600" />
+          <span className="uppercase tracking-wide text-slate-600">A oferta expira em:</span>
+          <span className="font-mono text-lg font-bold text-emerald-700">{mm}:{ss}</span>
         </div>
 
-        <p className="mt-4 text-center text-xs italic text-slate-400">
+        <p className="mt-4 text-center text-xs italic text-slate-500">
           O Plano Completo (Regular: R$ 29,90) é a escolha de 92% das pessoas.
           Aproveite o desconto de upgrade agora!
         </p>
 
-        <ul className="mt-5 space-y-2.5 rounded-xl border border-white/10 bg-white/5 p-4 text-sm">
-          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-amber-400" /> <span className="font-semibold">Tudo do Plano Básico</span></li>
-          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-amber-400" /> <span className="font-semibold">6 BÔNUS INCLUSOS</span> <span className="text-sm text-slate-400">(Pack Rural, ROI, Irrigação e +)</span></li>
-          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-amber-400" /> <span className="font-semibold">Suporte prioritário via WhatsApp</span></li>
+        <ul className="mt-5 space-y-2.5 rounded-xl border border-emerald-200 bg-white p-4 text-sm">
+          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> <span className="font-semibold text-slate-800">Tudo do Plano Básico</span></li>
+          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> <span className="font-semibold text-slate-800">6 BÔNUS INCLUSOS</span> <span className="text-sm text-slate-500">(Pack Rural, ROI, Irrigação e +)</span></li>
+          <li className="flex items-center gap-2"><Check className="h-4 w-4 text-emerald-600" /> <span className="font-semibold text-slate-800">Suporte prioritário via WhatsApp</span></li>
         </ul>
 
         <div className="mt-6 text-center">
-          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Upgrade do Plano Completo:</p>
-          <p className="mt-1 text-sm text-slate-400 line-through">De R$ 29,90</p>
-          <p className="font-display text-xl uppercase tracking-wide text-slate-200">
-            Por apenas R$ <span className="text-5xl text-amber-400">19</span>,90
+          <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Upgrade do Plano Completo:</p>
+          <p className="mt-1 text-sm text-slate-500 line-through">De R$ 29,90</p>
+          <p className="font-display text-xl uppercase tracking-wide text-slate-800">
+            Por apenas R$ <span className="text-5xl text-emerald-600">19</span>,90
           </p>
-          <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-amber-400">
+          <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-emerald-700">
             Economia de R$ 10,00 extra hoje!
           </p>
         </div>
 
         <a
           href="https://pay.wiapy.com/MowpM6rdLB"
-          className="soft-pulse mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-300 py-4 font-display text-sm uppercase text-black shadow-[0_10px_30px_-8px_rgba(251,191,36,0.6)] transition hover:scale-[1.02]"
+          className="soft-pulse mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-emerald-600 to-brand-neon py-4 font-display text-sm uppercase text-white shadow-[0_10px_30px_-8px_rgba(16,185,129,0.6)] transition hover:scale-[1.02]"
         >
           QUERO O PLANO COMPLETO POR R$ 19,90
         </a>
 
         <a
           href="https://pay.wiapy.com/rtXyisd1bF"
-          className="mt-4 block w-full text-center text-[11px] font-semibold uppercase tracking-wider text-slate-400 underline underline-offset-4 hover:text-white"
+          className="mt-4 block w-full text-center text-[11px] font-semibold uppercase tracking-wider text-slate-500 underline underline-offset-4 hover:text-slate-900"
         >
           Não, obrigado. Prefiro o Plano Básico de R$ 9,90
         </a>
