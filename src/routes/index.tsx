@@ -264,7 +264,7 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
         </div>
 
         <p className="mt-4 text-center text-xs italic text-slate-400">
-          O Plano Completo (Regular: R$ 27,90) é a escolha de 92% das pessoas.
+          O Plano Completo (Regular: R$ 29,90) é a escolha de 92% das pessoas.
           Aproveite o desconto de upgrade agora!
         </p>
 
@@ -276,9 +276,9 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
 
         <div className="mt-6 text-center">
           <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">Upgrade do Plano Completo:</p>
-          <p className="mt-1 text-sm text-slate-400 line-through">De R$ 27,90</p>
+          <p className="mt-1 text-sm text-slate-400 line-through">De R$ 29,90</p>
           <p className="font-display text-xl uppercase tracking-wide text-slate-200">
-            Por apenas R$ <span className="text-5xl text-amber-400">19</span>,90
+            Por apenas R$ <span className="text-5xl text-amber-400">21</span>,90
           </p>
           <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-amber-400">
             Economia de R$ 8,00 extra hoje!
@@ -289,7 +289,7 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
           href="https://pay.wiapy.com/MowpM6rdLB"
           className="soft-pulse mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-300 py-4 font-display text-sm uppercase text-black shadow-[0_10px_30px_-8px_rgba(251,191,36,0.6)] transition hover:scale-[1.02]"
         >
-          QUERO O PLANO COMPLETO POR R$ 19,90
+          QUERO O PLANO COMPLETO POR R$ 21,90
         </a>
 
         <a
@@ -850,7 +850,7 @@ function Index() {
               <CountdownCompleto />
               <div className="mt-2 text-center">
                 <p className="text-xs text-slate-500 line-through">de R$197,90 por:</p>
-                <p className="font-display text-5xl text-slate-900">R$27,90</p>
+                <p className="font-display text-5xl text-slate-900">R$29,90</p>
                 <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
               </div>
               <img src={heroMockup} alt="Plano Completo" className="hero-mockup-float mx-auto my-3 h-72 md:h-80 w-auto object-contain" />
