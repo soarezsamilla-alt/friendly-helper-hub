@@ -264,7 +264,7 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
         </div>
 
         <p className="mt-4 text-center text-xs italic text-slate-500">
-          O Plano Completo (Regular: R$ 29,90) é a escolha de 92% das pessoas.
+          O Plano Completo (Regular: R$ 24,90) é a escolha de 92% das pessoas.
           Aproveite o desconto de upgrade agora!
         </p>
 
