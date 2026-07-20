@@ -276,12 +276,12 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
 
         <div className="mt-6 text-center">
           <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Upgrade do Plano Completo:</p>
-          <p className="mt-1 text-sm text-slate-500 line-through">De R$ 29,90</p>
+          <p className="mt-1 text-sm text-slate-500 line-through">De R$ 24,90</p>
           <p className="font-display text-xl uppercase tracking-wide text-slate-800">
             Por apenas R$ <span className="text-5xl text-emerald-600">19</span>,90
           </p>
           <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-emerald-700">
-            Economia de R$ 10,00 extra hoje!
+            Economia de R$ 5,00 extra hoje!
           </p>
         </div>
 
