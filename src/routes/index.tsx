@@ -264,7 +264,7 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
         </div>
 
         <p className="mt-4 text-center text-xs italic text-slate-500">
-          O Plano Completo (Regular: R$ 29,90) é a escolha de 92% das pessoas.
+          O Plano Completo (Regular: R$ 24,90) é a escolha de 92% das pessoas.
           Aproveite o desconto de upgrade agora!
         </p>
 
@@ -276,12 +276,12 @@ function UpsellModal({ open, onClose }: { open: boolean; onClose: () => void }) 
 
         <div className="mt-6 text-center">
           <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Upgrade do Plano Completo:</p>
-          <p className="mt-1 text-sm text-slate-500 line-through">De R$ 29,90</p>
+          <p className="mt-1 text-sm text-slate-500 line-through">De R$ 24,90</p>
           <p className="font-display text-xl uppercase tracking-wide text-slate-800">
             Por apenas R$ <span className="text-5xl text-emerald-600">19</span>,90
           </p>
           <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-emerald-700">
-            Economia de R$ 10,00 extra hoje!
+            Economia de R$ 5,00 extra hoje!
           </p>
         </div>
 
@@ -850,7 +850,7 @@ function Index() {
               <CountdownCompleto />
               <div className="mt-2 text-center">
                 <p className="text-xs text-slate-500 line-through">de R$197,90 por:</p>
-                <p className="font-display text-5xl text-slate-900">R$29,90</p>
+                <p className="font-display text-5xl text-slate-900">R$24,90</p>
                 <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
               </div>
               <img src={heroMockup} alt="Plano Completo" className="hero-mockup-float mx-auto my-3 h-72 md:h-80 w-auto object-contain" />
