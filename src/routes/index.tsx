@@ -29,7 +29,7 @@ const bonus6 = "https://www.image2url.com/r2/default/images/1782876488561-f37692
 import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
-import heroMockupAsset from "@/assets/hero-mockup-new.png.asset.json";
+import heroMockupAsset from "@/assets/hero-mockup.webp.asset.json";
 import amostra01 from "@/assets/amostras/amostra-01.png.asset.json";
 import amostra03 from "@/assets/amostras/amostra-03.png.asset.json";
 import amostra05 from "@/assets/amostras/amostra-05.png.asset.json";
