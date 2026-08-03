@@ -32,7 +32,6 @@ import project3 from "@/assets/project3.jpg";
 import heroMockupAsset from "@/assets/hero-mockup.webp.asset.json";
 import amostra01 from "@/assets/amostras/amostra-01.png.asset.json";
 import amostra03 from "@/assets/amostras/amostra-03.png.asset.json";
-import amostra04 from "@/assets/amostras/amostra-04.png.asset.json";
 import amostra05 from "@/assets/amostras/amostra-05.png.asset.json";
 import amostra07 from "@/assets/amostras/amostra-07.png.asset.json";
 import amostra08 from "@/assets/amostras/amostra-08.png.asset.json";
@@ -93,7 +92,7 @@ function CountdownCompleto() {
 }
 
 const amostras = [
-  amostra01, amostra03, amostra04, amostra05,
+  amostra01, amostra03, amostra05,
   amostra07, amostra08, amostra09,
 ].map((a) => assetUrl(a.url));
 
