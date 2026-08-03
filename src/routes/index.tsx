@@ -668,7 +668,7 @@ function Index() {
                   ACESSO IMEDIATO
                 </span>
                 <img
-                  src={heroMockup}
+                  src={kitMockup}
                   alt="Kit +100 Projetos"
                   width={1200}
                   height={900}
