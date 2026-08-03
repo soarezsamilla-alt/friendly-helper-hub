@@ -661,8 +661,8 @@ function Index() {
             <Check className="h-4 w-4" /> Tudo isso está incluso no seu kit
           </div>
 
-          <div className="rounded-3xl bg-white p-8 text-slate-900 sm:p-12">
-            <div className="grid items-center gap-8 md:grid-cols-2">
+          <div className="rounded-3xl bg-white p-5 text-slate-900 sm:p-8">
+            <div className="grid items-center gap-5 md:grid-cols-2">
               <div className="relative">
                 <span className="absolute -left-2 -top-2 z-10 rounded-md bg-brand-red px-3 py-1.5 text-xs font-bold text-white shadow-lg">
                   ACESSO IMEDIATO
@@ -680,14 +680,14 @@ function Index() {
                 <span className="inline-block rounded-md bg-brand-neon/30 px-3 py-1 text-xs font-bold text-emerald-700">
                   ITEM 01
                 </span>
-                <h3 className="mt-3 font-display text-3xl uppercase leading-tight sm:text-4xl">
+                <h3 className="mt-2 font-display text-2xl uppercase leading-tight sm:text-3xl">
                   +100 Projetos de Sítios e Chácaras Produtivas
                 </h3>
-                <p className="mt-3 text-sm italic text-slate-600">
+                <p className="mt-2 text-sm italic text-slate-600">
                   O guia prático para transformar sua terra em um negócio lucrativo.
                 </p>
 
-                <ul className="mt-6 space-y-4">
+                <ul className="mt-4 space-y-2">
                   {[
                     ["Projetos com Medidas Reais", "Layout completo e estratégico do terreno"],
                     [
@@ -710,7 +710,7 @@ function Index() {
                   ))}
                 </ul>
 
-                <p className="mt-6 text-center font-bold text-brand-red">
+                <p className="mt-4 text-center font-bold text-brand-red">
                   + 6 BÔNUS EXCLUSIVOS ABAIXO 👇
                 </p>
               </div>
