@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import beforeAfter from "@/assets/before-after.jpg";
 import resultado from "@/assets/resultado.jpg";
-import kitMockup from "@/assets/kit-mockup.png";
+
 const bonus1 = "https://www.image2url.com/r2/default/images/1782875887848-660ae212-fba5-4775-a685-303df39ba460.png";
 const bonus2 = "https://www.image2url.com/r2/default/images/1782875989902-a913e28e-2c01-429c-997c-a56f11b63560.png";
 const bonus3 = "https://www.image2url.com/r2/default/images/1782876029236-fb9204f7-a5ee-4aff-b279-633f92f0640c.png";
