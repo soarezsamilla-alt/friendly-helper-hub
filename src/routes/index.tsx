@@ -57,6 +57,7 @@ import nova14 from "@/assets/amostras/nova-14.png.asset.json";
 const LOVABLE_ASSET_HOST = "https://project--607d45f1-757e-4ba2-ace0-5d0ca6928ea4.lovable.app";
 const assetUrl = (u: string) => (u.startsWith("/__l5e/") ? `${LOVABLE_ASSET_HOST}${u}` : u);
 const heroMockup = assetUrl(heroMockupAsset.url);
+const kitMockup = assetUrl(kitMockupAsset.url);
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
