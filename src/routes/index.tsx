@@ -36,6 +36,20 @@ import amostra05 from "@/assets/amostras/amostra-05.png.asset.json";
 import amostra07 from "@/assets/amostras/amostra-07.png.asset.json";
 import amostra08 from "@/assets/amostras/amostra-08.png.asset.json";
 import amostra09 from "@/assets/amostras/amostra-09.png.asset.json";
+import nova01 from "@/assets/amostras/nova-01.png.asset.json";
+import nova02 from "@/assets/amostras/nova-02.png.asset.json";
+import nova03 from "@/assets/amostras/nova-03.png.asset.json";
+import nova04 from "@/assets/amostras/nova-04.png.asset.json";
+import nova05 from "@/assets/amostras/nova-05.png.asset.json";
+import nova06 from "@/assets/amostras/nova-06.png.asset.json";
+import nova07 from "@/assets/amostras/nova-07.png.asset.json";
+import nova08 from "@/assets/amostras/nova-08.png.asset.json";
+import nova09 from "@/assets/amostras/nova-09.png.asset.json";
+import nova10 from "@/assets/amostras/nova-10.png.asset.json";
+import nova11 from "@/assets/amostras/nova-11.png.asset.json";
+import nova12 from "@/assets/amostras/nova-12.png.asset.json";
+import nova13 from "@/assets/amostras/nova-13.png.asset.json";
+import nova14 from "@/assets/amostras/nova-14.png.asset.json";
 // Assets served by Lovable's CDN use a relative /__l5e/ prefix that only resolves
 // on Lovable hosting. When deployed elsewhere (e.g. Vercel), prepend the stable
 // Lovable project host so images continue to load.
@@ -92,6 +106,8 @@ function CountdownCompleto() {
 }
 
 const amostras = [
+  nova01, nova02, nova03, nova04, nova05, nova06, nova07,
+  nova08, nova09, nova10, nova11, nova12, nova13, nova14,
   amostra01, amostra03, amostra05,
   amostra07, amostra08, amostra09,
 ].map((a) => assetUrl(a.url));
