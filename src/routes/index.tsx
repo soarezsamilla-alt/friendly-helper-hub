@@ -102,6 +102,7 @@ function CountdownCompleto() {
 const amostras = [
   amostra01, amostra02, amostra03, amostra04, amostra05,
   amostra06, amostra07, amostra08, amostra09, amostra10,
+  amostra11, amostra12, amostra13, amostra14,
 ].map((a) => assetUrl(a.url));
 
 export const Route = createFileRoute("/")({
