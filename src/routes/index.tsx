@@ -30,20 +30,16 @@ import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
 import heroMockupAsset from "@/assets/hero-mockup.webp.asset.json";
-import amostra01 from "@/assets/amostras2/amostra-01.png.asset.json";
-import amostra02 from "@/assets/amostras2/amostra-02.png.asset.json";
-import amostra03 from "@/assets/amostras2/amostra-03.png.asset.json";
-import amostra04 from "@/assets/amostras2/amostra-04.png.asset.json";
-import amostra05 from "@/assets/amostras2/amostra-05.png.asset.json";
-import amostra06 from "@/assets/amostras2/amostra-06.png.asset.json";
-import amostra07 from "@/assets/amostras2/amostra-07.png.asset.json";
-import amostra08 from "@/assets/amostras2/amostra-08.png.asset.json";
-import amostra09 from "@/assets/amostras2/amostra-09.png.asset.json";
-import amostra10 from "@/assets/amostras2/amostra-10.png.asset.json";
-import amostra11 from "@/assets/amostras2/amostra-11.png.asset.json";
-import amostra12 from "@/assets/amostras2/amostra-12.png.asset.json";
-import amostra13 from "@/assets/amostras2/amostra-13.png.asset.json";
-import amostra14 from "@/assets/amostras2/amostra-14.png.asset.json";
+import amostra01 from "@/assets/amostras/amostra-01.png.asset.json";
+import amostra02 from "@/assets/amostras/amostra-02.png.asset.json";
+import amostra03 from "@/assets/amostras/amostra-03.png.asset.json";
+import amostra04 from "@/assets/amostras/amostra-04.png.asset.json";
+import amostra05 from "@/assets/amostras/amostra-05.png.asset.json";
+import amostra06 from "@/assets/amostras/amostra-06.png.asset.json";
+import amostra07 from "@/assets/amostras/amostra-07.png.asset.json";
+import amostra08 from "@/assets/amostras/amostra-08.png.asset.json";
+import amostra09 from "@/assets/amostras/amostra-09.png.asset.json";
+import amostra10 from "@/assets/amostras/amostra-10.png.asset.json";
 // Assets served by Lovable's CDN use a relative /__l5e/ prefix that only resolves
 // on Lovable hosting. When deployed elsewhere (e.g. Vercel), prepend the stable
 // Lovable project host so images continue to load.
@@ -102,7 +98,6 @@ function CountdownCompleto() {
 const amostras = [
   amostra01, amostra02, amostra03, amostra04, amostra05,
   amostra06, amostra07, amostra08, amostra09, amostra10,
-  amostra11, amostra12, amostra13, amostra14,
 ].map((a) => assetUrl(a.url));
 
 export const Route = createFileRoute("/")({
@@ -174,8 +169,7 @@ function ProjetosCarousel() {
             <img
               src={src}
               alt={`Amostra ${i + 1}`}
-              loading="eager"
-              decoding="async"
+              loading="lazy"
               className="mx-auto h-auto w-full rounded-xl object-contain ring-1 ring-black/10"
             />
           </CarouselItem>
@@ -945,7 +939,7 @@ function Index() {
                   <p className="text-[10px] uppercase tracking-wider text-slate-400">Projetos</p>
                 </div>
                 <div className="text-center">
-                  <p className="font-display text-lg text-amber-400">27 mil</p>
+                  <p className="font-display text-lg text-amber-400">12 mil</p>
                   <p className="text-[10px] uppercase tracking-wider text-slate-400">Produtores</p>
                 </div>
                 <div className="text-center">
