@@ -106,6 +106,8 @@ function CountdownCompleto() {
 }
 
 const amostras = [
+  nova01, nova02, nova03, nova04, nova05, nova06, nova07,
+  nova08, nova09, nova10, nova11, nova12, nova13, nova14,
   amostra01, amostra03, amostra05,
   amostra07, amostra08, amostra09,
 ].map((a) => assetUrl(a.url));
