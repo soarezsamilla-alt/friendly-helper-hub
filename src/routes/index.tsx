@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import beforeAfter from "@/assets/before-after.jpg";
 import resultado from "@/assets/resultado.jpg";
-import kitMockup from "@/assets/kit-mockup.png";
+
 const bonus1 = "https://www.image2url.com/r2/default/images/1782875887848-660ae212-fba5-4775-a685-303df39ba460.png";
 const bonus2 = "https://www.image2url.com/r2/default/images/1782875989902-a913e28e-2c01-429c-997c-a56f11b63560.png";
 const bonus3 = "https://www.image2url.com/r2/default/images/1782876029236-fb9204f7-a5ee-4aff-b279-633f92f0640c.png";
@@ -30,6 +30,7 @@ import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
 import heroMockupAsset from "@/assets/hero-mockup.webp.asset.json";
+import kitMockupAsset from "@/assets/kit-mockup.png.asset.json";
 import amostra01 from "@/assets/amostras/amostra-01.png.asset.json";
 import amostra03 from "@/assets/amostras/amostra-03.png.asset.json";
 import amostra05 from "@/assets/amostras/amostra-05.png.asset.json";
@@ -56,6 +57,7 @@ import nova14 from "@/assets/amostras/nova-14.png.asset.json";
 const LOVABLE_ASSET_HOST = "https://project--607d45f1-757e-4ba2-ace0-5d0ca6928ea4.lovable.app";
 const assetUrl = (u: string) => (u.startsWith("/__l5e/") ? `${LOVABLE_ASSET_HOST}${u}` : u);
 const heroMockup = assetUrl(heroMockupAsset.url);
+const kitMockup = assetUrl(kitMockupAsset.url);
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -666,7 +668,7 @@ function Index() {
                   ACESSO IMEDIATO
                 </span>
                 <img
-                  src={heroMockup}
+                  src={kitMockup}
                   alt="Kit +100 Projetos"
                   width={1200}
                   height={900}
