@@ -38,7 +38,6 @@ import amostra06 from "@/assets/amostras/amostra-06.png.asset.json";
 import amostra07 from "@/assets/amostras/amostra-07.png.asset.json";
 import amostra08 from "@/assets/amostras/amostra-08.png.asset.json";
 import amostra09 from "@/assets/amostras/amostra-09.png.asset.json";
-import amostra10 from "@/assets/amostras/amostra-10.png.asset.json";
 // Assets served by Lovable's CDN use a relative /__l5e/ prefix that only resolves
 // on Lovable hosting. When deployed elsewhere (e.g. Vercel), prepend the stable
 // Lovable project host so images continue to load.
@@ -96,7 +95,7 @@ function CountdownCompleto() {
 
 const amostras = [
   amostra01, amostra03, amostra04, amostra05,
-  amostra06, amostra07, amostra08, amostra09, amostra10,
+  amostra06, amostra07, amostra08, amostra09,
 ].map((a) => assetUrl(a.url));
 
 export const Route = createFileRoute("/")({
