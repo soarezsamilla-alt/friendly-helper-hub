@@ -31,7 +31,6 @@ import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
 import heroMockupAsset from "@/assets/hero-mockup.webp.asset.json";
 import amostra01 from "@/assets/amostras/amostra-01.png.asset.json";
-import amostra01 from "@/assets/amostras/amostra-01.png.asset.json";
 import amostra03 from "@/assets/amostras/amostra-03.png.asset.json";
 import amostra04 from "@/assets/amostras/amostra-04.png.asset.json";
 import amostra05 from "@/assets/amostras/amostra-05.png.asset.json";
