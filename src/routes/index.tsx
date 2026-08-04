@@ -841,7 +841,7 @@ function Index() {
                 <p className="font-display text-5xl text-slate-900">R$9,90</p>
                 <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">pagamento único</p>
               </div>
-              <img src="https://www.image2url.com/r2/default/images/1782875177060-724e08a3-5aa9-4686-9d30-5050877c3ca7.webp" alt="Plano Básico" className="hero-mockup-float mx-auto my-3 h-72 md:h-80 w-auto object-contain" />
+              <img src={planoBasicoMockup} alt="Plano Básico" className="hero-mockup-float mx-auto my-3 h-72 md:h-80 w-auto object-contain" />
               <ul className="space-y-1.5 text-[15px]">
                 <li className="flex items-center gap-2 font-semibold text-slate-900"><Check className="h-4 w-4 text-emerald-600" /> +100 projetos completos</li>
                 <li className="flex items-center gap-2 font-semibold text-slate-900"><Check className="h-4 w-4 text-emerald-600" /> Acesso imediato após compra</li>
