@@ -821,7 +821,7 @@ function Index() {
 
       {/* PRICING */}
       <section id="planos" className="bg-white px-4 py-20 text-slate-900">
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-4xl">
           <h2 className="text-center font-display text-3xl uppercase leading-tight sm:text-5xl">
             ESCOLHA SEU PLANO E <span className="text-emerald-500">COMECE AGORA</span>
           </h2>
@@ -832,17 +832,17 @@ function Index() {
             </span>
           </div>
 
-          <div className="mt-10 grid items-start gap-6 md:grid-cols-2">
+          <div className="mt-10 grid items-start gap-5 md:grid-cols-2">
             {/* Plano Básico */}
-            <div className="card-border-light rounded-3xl bg-white p-5 shadow-sm">
+            <div className="card-border-light rounded-3xl bg-white p-4 shadow-sm">
               <h3 className="text-center font-display text-2xl uppercase">PLANO BÁSICO</h3>
-              <div className="mt-2 text-center">
+              <div className="mt-1 text-center">
                 <p className="text-xs text-slate-500 line-through">de R$97,90 por:</p>
                 <p className="font-display text-5xl text-slate-900">R$9,90</p>
                 <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">pagamento único</p>
               </div>
-              <img src={planoBasicoMockup} alt="Plano Básico" className="hero-mockup-float mx-auto my-3 h-72 md:h-80 w-auto object-contain" />
-              <ul className="space-y-1.5 text-[15px]">
+              <img src={planoBasicoMockup} alt="Plano Básico" className="hero-mockup-float mx-auto my-2 h-72 md:h-80 w-auto object-contain" />
+              <ul className="space-y-1 text-[15px]">
                 <li className="flex items-center gap-2 font-semibold text-slate-900"><Check className="h-4 w-4 text-emerald-600" /> +100 projetos completos</li>
                 <li className="flex items-center gap-2 font-semibold text-slate-900"><Check className="h-4 w-4 text-emerald-600" /> Acesso imediato após compra</li>
                 <li className="flex items-center gap-2 font-semibold text-slate-900"><Check className="h-4 w-4 text-emerald-600" /> Garantia de 7 dias</li>
@@ -851,29 +851,29 @@ function Index() {
               <button
                 type="button"
                 onClick={() => setUpsellOpen(true)}
-                className="soft-pulse mt-4 flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white py-3 font-display text-sm uppercase text-slate-600 transition hover:bg-slate-50"
+                className="soft-pulse mt-3 flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white py-3 font-display text-sm uppercase text-slate-600 transition hover:bg-slate-50"
               >
                 QUERO O BÁSICO <ArrowRight className="h-4 w-4" />
               </button>
             </div>
 
             {/* Plano Completo */}
-            <div id="comprar" className="relative scroll-mt-24 rounded-3xl bg-lime-50 p-5 ring-2 ring-brand-neon shadow-xl">
+            <div id="comprar" className="relative scroll-mt-24 rounded-3xl bg-lime-50 p-4 ring-2 ring-brand-neon shadow-xl">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-bg px-4 py-1 text-[8px] font-bold uppercase tracking-wide text-brand-neon">
                 Mais Vendido · Plano Completo
               </span>
               <h3 className="text-center font-display text-2xl uppercase">PLANO COMPLETO</h3>
               <CountdownCompleto />
-              <div className="mt-2 text-center">
+              <div className="mt-1 text-center">
                 <p className="text-xs text-slate-500 line-through">de R$197,90 por:</p>
                 <p className="font-display text-5xl text-slate-900">R$27,90</p>
                 <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
               </div>
-              <img src={heroMockup} alt="Plano Completo" className="hero-mockup-float mx-auto my-3 h-72 md:h-80 w-auto object-contain" />
-              <div className="mb-3 rounded-xl bg-brand-bg py-2 text-center font-display text-xs uppercase text-white">
+              <img src={heroMockup} alt="Plano Completo" className="hero-mockup-float mx-auto my-2 h-72 md:h-80 w-auto object-contain" />
+              <div className="mb-2 rounded-xl bg-brand-bg py-2 text-center font-display text-xs uppercase text-white">
                 Todos os Bônus Inclusos
               </div>
-              <ul className="space-y-1.5 text-[15px]">
+              <ul className="space-y-1 text-[15px]">
                 {[
                   "Tudo do Plano Básico",
                   "BÔNUS 1: Construções Rurais",
@@ -894,11 +894,11 @@ function Index() {
 
               <a
                 href="https://pay.wiapy.com/sOZisMvvt9"
-                className="soft-pulse mt-4 flex w-full items-center justify-center gap-2 rounded-full bg-brand-neon py-3 font-display text-sm uppercase text-brand-bg shadow-[0_10px_30px_-8px_#c4ff2e] transition hover:scale-[1.02]"
+                className="soft-pulse mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-brand-neon py-3 font-display text-sm uppercase text-brand-bg shadow-[0_10px_30px_-8px_#c4ff2e] transition hover:scale-[1.02]"
               >
                 Quero o Plano Completo <ArrowRight className="h-4 w-4" />
               </a>
-              <p className="mt-3 text-center text-xs font-bold text-brand-red">
+              <p className="mt-2 text-center text-xs font-bold text-brand-red">
                 🔥 APROVEITE AGORA: VOCÊ NÃO VAI ENCONTRAR ESSE PREÇO DEPOIS!
               </p>
               <p className="mt-1 text-center text-[10px] text-slate-500">7 dias de garantia incondicional</p>
