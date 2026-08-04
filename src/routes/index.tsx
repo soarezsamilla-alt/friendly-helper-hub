@@ -675,7 +675,7 @@ function Index() {
                   width={1200}
                   height={900}
                   loading="lazy"
-                  className="hero-mockup-float w-full"
+                  className="hero-mockup-float mx-auto w-full max-w-[85%]"
                 />
               </div>
               <div>
