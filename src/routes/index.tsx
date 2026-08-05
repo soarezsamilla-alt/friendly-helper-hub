@@ -60,6 +60,7 @@ const assetUrl = (u: string) => (u.startsWith("/__l5e/") ? `${LOVABLE_ASSET_HOST
 const heroMockup = assetUrl(heroMockupAsset.url);
 const kitMockup = assetUrl(kitMockupAsset.url);
 const planoBasicoMockup = assetUrl(planoBasicoMockupAsset.url);
+const bonus1 = assetUrl(bonus01Asset.url);
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
