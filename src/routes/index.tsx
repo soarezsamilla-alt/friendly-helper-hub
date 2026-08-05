@@ -23,6 +23,7 @@ import resultado from "@/assets/resultado.jpg";
 import bonus01Asset from "@/assets/bonus/bonus-01.png.asset.json";
 import bonus02Asset from "@/assets/bonus/bonus-02.png.asset.json";
 import bonus03Asset from "@/assets/bonus/bonus-03.png.asset.json";
+import bonus04Asset from "@/assets/bonus/bonus-04.png.asset.json";
 
 const bonus5 = "https://www.image2url.com/r2/default/images/1782876238352-3bb5855b-9042-4eb4-a7e1-02207dc04a29.png";
 const bonus6 = "https://www.image2url.com/r2/default/images/1782876488561-f37692f5-6ba3-4736-bda8-b0ed049f92ed.png";
