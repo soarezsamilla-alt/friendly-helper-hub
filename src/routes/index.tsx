@@ -27,7 +27,7 @@ import bonus04Asset from "@/assets/bonus/bonus-04.png.asset.json";
 import bonus05Asset from "@/assets/bonus/bonus-05.png.asset.json";
 import bonus06Asset from "@/assets/bonus/bonus-06.png.asset.json";
 
-const bonus6 = assetUrl(bonus06Asset.url);
+
 import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
