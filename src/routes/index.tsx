@@ -26,7 +26,6 @@ import bonus03Asset from "@/assets/bonus/bonus-03.png.asset.json";
 import bonus04Asset from "@/assets/bonus/bonus-04.png.asset.json";
 import bonus05Asset from "@/assets/bonus/bonus-05.png.asset.json";
 
-const bonus5 = "https://www.image2url.com/r2/default/images/1782876238352-3bb5855b-9042-4eb4-a7e1-02207dc04a29.png";
 const bonus6 = "https://www.image2url.com/r2/default/images/1782876488561-f37692f5-6ba3-4736-bda8-b0ed049f92ed.png";
 import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
