@@ -22,7 +22,6 @@ import resultado from "@/assets/resultado.jpg";
 
 import bonus01Asset from "@/assets/bonus/bonus-01.png.asset.json";
 import bonus02Asset from "@/assets/bonus/bonus-02.png.asset.json";
-const bonus2 = "https://www.image2url.com/r2/default/images/1782875989902-a913e28e-2c01-429c-997c-a56f11b63560.png";
 const bonus3 = "https://www.image2url.com/r2/default/images/1782876029236-fb9204f7-a5ee-4aff-b279-633f92f0640c.png";
 const bonus4 = "https://www.image2url.com/r2/default/images/1782876162413-78aa6ea1-66fb-4a5f-ab4e-832da089c294.png";
 const bonus5 = "https://www.image2url.com/r2/default/images/1782876238352-3bb5855b-9042-4eb4-a7e1-02207dc04a29.png";
