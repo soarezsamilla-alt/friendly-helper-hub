@@ -67,6 +67,7 @@ const bonus2 = assetUrl(bonus02Asset.url);
 const bonus3 = assetUrl(bonus03Asset.url);
 const bonus4 = assetUrl(bonus04Asset.url);
 const bonus5 = assetUrl(bonus05Asset.url);
+const bonus6 = assetUrl(bonus06Asset.url);
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
