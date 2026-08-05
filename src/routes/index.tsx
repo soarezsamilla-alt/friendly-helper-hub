@@ -25,8 +25,9 @@ import bonus02Asset from "@/assets/bonus/bonus-02.png.asset.json";
 import bonus03Asset from "@/assets/bonus/bonus-03.png.asset.json";
 import bonus04Asset from "@/assets/bonus/bonus-04.png.asset.json";
 import bonus05Asset from "@/assets/bonus/bonus-05.png.asset.json";
+import bonus06Asset from "@/assets/bonus/bonus-06.png.asset.json";
 
-const bonus6 = "https://www.image2url.com/r2/default/images/1782876488561-f37692f5-6ba3-4736-bda8-b0ed049f92ed.png";
+
 import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
@@ -66,6 +67,7 @@ const bonus2 = assetUrl(bonus02Asset.url);
 const bonus3 = assetUrl(bonus03Asset.url);
 const bonus4 = assetUrl(bonus04Asset.url);
 const bonus5 = assetUrl(bonus05Asset.url);
+const bonus6 = assetUrl(bonus06Asset.url);
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
