@@ -62,6 +62,7 @@ const kitMockup = assetUrl(kitMockupAsset.url);
 const planoBasicoMockup = assetUrl(planoBasicoMockupAsset.url);
 const bonus1 = assetUrl(bonus01Asset.url);
 const bonus2 = assetUrl(bonus02Asset.url);
+const bonus3 = assetUrl(bonus03Asset.url);
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
