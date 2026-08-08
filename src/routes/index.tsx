@@ -988,6 +988,29 @@ function Index() {
         </div>
       </section>
 
+      {/* GARANTIA */}
+      <section className="bg-white px-4 py-16 text-slate-900">
+        <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 sm:flex-row sm:items-start">
+          <div className="grid h-24 w-24 shrink-0 place-items-center rounded-full bg-gradient-to-br from-amber-300 to-amber-600 font-display text-white">
+            <div className="text-center leading-none">
+              <div className="text-2xl">7</div>
+              <div className="text-[10px]">DIAS</div>
+              <div className="text-[8px]">GARANTIA</div>
+            </div>
+          </div>
+          <div>
+            <h3 className="flex items-center gap-2 font-display text-lg uppercase sm:text-xl">
+              <ShieldCheck className="h-5 w-5 text-amber-500" /> Garantia Incondicional de 7 dias
+            </h3>
+            <p className="mt-3 text-sm text-slate-600">
+              Se por qualquer motivo você não ficar satisfeito com o material, basta solicitar o
+              reembolso em até 7 dias após a compra e devolveremos{" "}
+              <strong>100% do seu investimento</strong>. Sem perguntas, sem burocracia.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="bg-white px-4 py-20 text-slate-900">
         <div className="mx-auto max-w-3xl">
@@ -1015,29 +1038,6 @@ function Index() {
                 <p className="mt-3 text-sm leading-relaxed text-slate-600">{item.a}</p>
               </details>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* GARANTIA */}
-      <section className="bg-white px-4 py-16 text-slate-900">
-        <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 sm:flex-row sm:items-start">
-          <div className="grid h-24 w-24 shrink-0 place-items-center rounded-full bg-gradient-to-br from-amber-300 to-amber-600 font-display text-white">
-            <div className="text-center leading-none">
-              <div className="text-2xl">7</div>
-              <div className="text-[10px]">DIAS</div>
-              <div className="text-[8px]">GARANTIA</div>
-            </div>
-          </div>
-          <div>
-            <h3 className="flex items-center gap-2 font-display text-lg uppercase sm:text-xl">
-              <ShieldCheck className="h-5 w-5 text-amber-500" /> Garantia Incondicional de 7 dias
-            </h3>
-            <p className="mt-3 text-sm text-slate-600">
-              Se por qualquer motivo você não ficar satisfeito com o material, basta solicitar o
-              reembolso em até 7 dias após a compra e devolveremos{" "}
-              <strong>100% do seu investimento</strong>. Sem perguntas, sem burocracia.
-            </p>
           </div>
         </div>
       </section>
