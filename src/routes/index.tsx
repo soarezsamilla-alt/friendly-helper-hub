@@ -797,35 +797,6 @@ function Index() {
         </div>
       </section>
 
-      {/* COMECE EM MINUTOS */}
-      <section className="px-4 py-20">
-        <div className="mx-auto max-w-6xl">
-          <SectionTitle>
-            COMECE A ORGANIZAR{" "}
-            <span className="bg-brand-neon px-2 text-brand-bg">EM MINUTOS</span>
-          </SectionTitle>
-
-          <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { n: 1, title: "ESCOLHA SEU PLANO", text: "Clique no botão e escolha o plano ideal para sua necessidade." },
-              { n: 2, title: "RECEBA O ACESSO", text: "Em poucos segundos o material chega no seu WhatsApp e no seu e-mail." },
-              { n: 3, title: "ABRA OS PROJETOS", text: "Acesse pelo celular, tablet ou se preferir pela tela do computador." },
-              { n: 4, title: "APLIQUE NA TERRA", text: "Comece a organizar seu sítio e transformar sua terra em lucro." },
-            ].map(({ n, title, text }) => (
-              <div key={n} className="text-center">
-                <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-brand-neon font-display text-xl text-brand-bg shadow-[0_8px_24px_-6px_#c4ff2e]">
-                  {n}
-                </div>
-                <h3 className="mt-5 font-display text-sm uppercase leading-tight text-white">
-                  {title}
-                </h3>
-                <p className="mt-3 text-xs leading-relaxed text-slate-400">{text}</p>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
 
       {/* PRICING */}
       <section id="planos" className="bg-white px-4 py-20 text-slate-900">
