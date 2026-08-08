@@ -934,7 +934,7 @@ function Index() {
                   <p className="text-[10px] uppercase tracking-wider text-slate-400">Projetos</p>
                 </div>
                 <div className="text-center">
-                  <p className="font-display text-lg text-amber-400">12 mil</p>
+                  <p className="font-display text-lg text-amber-400">28 mil</p>
                   <p className="text-[10px] uppercase tracking-wider text-slate-400">Produtores</p>
                 </div>
                 <div className="text-center">
