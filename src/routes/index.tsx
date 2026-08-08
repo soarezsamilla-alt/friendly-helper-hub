@@ -95,23 +95,35 @@ function CountdownCompleto() {
   const h = String(Math.floor(ms / 3600000)).padStart(2, "0");
   const m = String(Math.floor((ms % 3600000) / 60000)).padStart(2, "0");
   const s = String(Math.floor((ms % 60000) / 1000)).padStart(2, "0");
-  const Box = ({ v, l }: { v: string; l: string }) => (
-    <div className="flex flex-col items-center rounded-lg bg-brand-bg px-3 py-2 min-w-[58px]">
-      <span className="font-display text-2xl leading-none text-brand-neon tabular-nums">{v}</span>
-      <span className="mt-1 text-[9px] font-bold uppercase tracking-wider text-white/70">{l}</span>
+  const Unit = ({ v, l }: { v: string; l: string }) => (
+    <div className="relative flex flex-col items-center overflow-hidden rounded-xl bg-brand-bg px-3 py-2.5 shadow-[0_0_20px_-6px_rgba(196,255,46,0.35)] min-w-[64px] ring-1 ring-brand-neon/40">
+      <div className="absolute inset-x-0 top-1/2 h-px bg-black/20" />
+      <span className="relative z-10 font-display text-2xl leading-none text-brand-neon tabular-nums tracking-tight">{v}</span>
+      <span className="relative z-10 mt-1.5 text-[8px] font-bold uppercase tracking-widest text-white/80">{l}</span>
     </div>
   );
+  const Separator = () => (
+    <span className="flex flex-col gap-1.5 pt-1">
+      <span className="h-1.5 w-1.5 rounded-full bg-brand-neon/70 shadow-[0_0_6px_#c4ff2e]" />
+      <span className="h-1.5 w-1.5 rounded-full bg-brand-neon/70 shadow-[0_0_6px_#c4ff2e]" />
+    </span>
+  );
   return (
-    <div className="mt-4 rounded-xl border-2 border-brand-red/40 bg-white/60 p-3">
-      <p className="mb-2 text-center text-[11px] font-bold uppercase tracking-wider text-brand-red">
-        ⏰ Oferta expira em:
-      </p>
-      <div className="flex items-center justify-center gap-2">
-        <Box v={h} l="Horas" />
-        <span className="font-display text-2xl text-brand-bg">:</span>
-        <Box v={m} l="Min" />
-        <span className="font-display text-2xl text-brand-bg">:</span>
-        <Box v={s} l="Seg" />
+    <div className="mt-4 overflow-hidden rounded-2xl border border-brand-red/25 bg-gradient-to-br from-brand-red/10 via-white to-white p-3.5">
+      <div className="flex items-center justify-center gap-1.5">
+        <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand-red/15 text-brand-red">
+          <Clock className="h-2.5 w-2.5" />
+        </span>
+        <p className="text-[11px] font-bold uppercase tracking-wider text-brand-red">
+          Oferta expira em:
+        </p>
+      </div>
+      <div className="mt-2.5 flex items-center justify-center gap-2">
+        <Unit v={h} l="Horas" />
+        <Separator />
+        <Unit v={m} l="Min" />
+        <Separator />
+        <Unit v={s} l="Seg" />
       </div>
     </div>
   );
