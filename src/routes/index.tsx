@@ -637,8 +637,8 @@ function Index() {
             <img
               src={resultado}
               alt="Sítio produtivo organizado"
-              width={1200}
-              height={800}
+              width={1344}
+              height={1024}
               loading="lazy"
               className="w-full rounded-2xl"
             />
