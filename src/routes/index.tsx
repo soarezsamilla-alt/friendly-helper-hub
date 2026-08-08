@@ -811,7 +811,7 @@ function Index() {
             </span>
           </div>
 
-          <div className="mt-10 grid items-start gap-5 md:grid-cols-2">
+          <div className="mt-10 grid items-start gap-8 md:grid-cols-2 lg:gap-10">
             {/* Plano Básico */}
             <div className="card-border-light rounded-3xl bg-white p-4 shadow-sm">
               <h3 className="text-center font-display text-2xl uppercase">PLANO BÁSICO</h3>
