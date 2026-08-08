@@ -756,7 +756,7 @@ function Index() {
                 key={n}
                 className="overflow-hidden rounded-2xl bg-brand-card ring-1 ring-white/10"
               >
-                <div className="relative bg-gradient-to-b from-slate-700 to-slate-900 p-4">
+                <div className="relative bg-gradient-to-b from-slate-700 to-slate-900 p-3">
                   <span className="absolute left-3 top-3 z-10 rounded-full bg-brand-neon px-3 py-1 text-[10px] font-bold uppercase text-brand-bg">
                     #{n} · Bônus Hoje!
                   </span>
@@ -766,12 +766,12 @@ function Index() {
                     width={800}
                     height={1000}
                     loading="lazy"
-                    className="hero-mockup-float mx-auto h-64 w-auto object-contain"
+                    className="hero-mockup-float mx-auto h-48 w-auto object-contain"
                   />
                 </div>
-                <div className="p-5">
+                <div className="p-4">
                   <h3 className="font-display text-sm uppercase leading-tight">{title}</h3>
-                  <p className="mt-3 text-xs leading-relaxed text-slate-400">{text}</p>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-400">{text}</p>
                 </div>
               </div>
             ))}
