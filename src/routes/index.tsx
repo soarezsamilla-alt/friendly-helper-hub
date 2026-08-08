@@ -849,22 +849,35 @@ function Index() {
             </div>
 
             {/* Plano Completo */}
-            <div id="comprar" className="relative scroll-mt-24 rounded-3xl bg-lime-50 p-4 ring-2 ring-brand-neon shadow-xl">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-bg px-4 py-1 text-[8px] font-bold uppercase tracking-wide text-brand-neon">
+            <div id="comprar" className="relative scroll-mt-24 overflow-hidden rounded-3xl bg-gradient-to-b from-lime-50 via-white to-white p-4 ring-2 ring-brand-neon shadow-[0_20px_60px_-20px_rgba(196,255,46,0.35)]">
+              {/* Faixa de destaque superior */}
+              <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-brand-neon via-emerald-400 to-brand-neon" />
+              {/* Glow sutil */}
+              <div className="pointer-events-none absolute -right-20 -top-20 h-40 w-40 rounded-full bg-brand-neon/20 blur-3xl" />
+              <div className="pointer-events-none absolute -bottom-20 -left-20 h-40 w-40 rounded-full bg-emerald-400/15 blur-3xl" />
+
+              <span className="relative z-10 mx-auto -mt-6 block w-fit rounded-full bg-brand-bg px-4 py-1.5 text-[9px] font-bold uppercase tracking-wide text-brand-neon shadow-lg">
                 Mais Vendido · Plano Completo
               </span>
-              <h3 className="text-center font-display text-2xl uppercase">PLANO COMPLETO</h3>
+
+              <h3 className="relative z-10 mt-3 text-center font-display text-2xl uppercase">PLANO COMPLETO</h3>
+              <p className="relative z-10 text-center text-xs font-medium text-slate-500">Acesso vitalício + todos os bônus</p>
+
               <CountdownCompleto />
-              <div className="mt-1 text-center">
+
+              <div className="relative z-10 mt-2 rounded-2xl border border-slate-200 bg-white/70 py-3 text-center shadow-sm">
                 <p className="text-xs text-slate-500 line-through">de R$197,90 por:</p>
-                <p className="font-display text-5xl text-slate-900">R$27,90</p>
-                <p className="mt-1 text-[11px] font-bold uppercase text-slate-600">Melhor opção — Completo</p>
+                <p className="font-display text-5xl leading-tight text-slate-900">R$27,90</p>
+                <p className="mt-0.5 text-[11px] font-bold uppercase text-emerald-600">Melhor opção — Completo</p>
               </div>
-              <img src={heroMockup} alt="Plano Completo" className="hero-mockup-float mx-auto my-1 h-44 md:h-52 w-auto object-contain" />
-              <div className="mb-2 rounded-xl bg-brand-bg py-2 text-center font-display text-xs uppercase text-white">
+
+              <img src={heroMockup} alt="Plano Completo" className="hero-mockup-float relative z-10 mx-auto my-2 h-44 md:h-52 w-auto object-contain" />
+
+              <div className="relative z-10 mb-2 rounded-xl bg-gradient-to-r from-brand-bg to-brand-card py-2 text-center font-display text-xs uppercase tracking-wide text-white shadow-md">
                 Todos os Bônus Inclusos
               </div>
-              <ul className="space-y-1 text-[15px]">
+
+              <ul className="relative z-10 space-y-1 text-[15px]">
                 {[
                   "Tudo do Plano Básico",
                   "BÔNUS 1: Construções Rurais",
@@ -878,21 +891,21 @@ function Index() {
                   "Suporte prioritário via WhatsApp",
                 ].map((t) => (
                   <li key={t} className="flex items-center gap-2 font-semibold text-slate-900">
-                    <Check className="h-4 w-4 text-emerald-600" /> {t}
+                    <Check className="h-4 w-4 shrink-0 text-emerald-600" /> {t}
                   </li>
                 ))}
               </ul>
 
               <a
                 href="https://pay.wiapy.com/sOZisMvvt9"
-                className="soft-pulse mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-brand-neon py-3 font-display text-sm uppercase text-brand-bg shadow-[0_10px_30px_-8px_#c4ff2e] transition hover:scale-[1.02]"
+                className="soft-pulse relative z-10 mt-3 flex w-full items-center justify-center gap-2 rounded-full bg-brand-neon py-3 font-display text-sm uppercase text-brand-bg shadow-[0_10px_30px_-8px_#c4ff2e] transition hover:scale-[1.02]"
               >
                 Quero o Plano Completo <ArrowRight className="h-4 w-4" />
               </a>
-              <p className="mt-2 text-center text-xs font-bold text-brand-red">
+              <p className="relative z-10 mt-2 text-center text-xs font-bold text-brand-red">
                 🔥 APROVEITE AGORA: VOCÊ NÃO VAI ENCONTRAR ESSE PREÇO DEPOIS!
               </p>
-              <p className="mt-1 text-center text-[10px] text-slate-500">7 dias de garantia incondicional</p>
+              <p className="relative z-10 mt-1 text-center text-[10px] text-slate-500">7 dias de garantia incondicional</p>
             </div>
           </div>
         </div>
